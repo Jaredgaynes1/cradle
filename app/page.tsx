@@ -8,10 +8,10 @@ export default function HomePage() {
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="border-b border-gray-200">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="text-2xl font-bold text-gray-900">Cradle</div>
+        <div className="container mx-auto px-4 py-4 grid grid-cols-3 items-center">
+          <div className="text-2xl font-bold text-gray-900 justify-self-start">Cradle</div>
 
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center justify-center space-x-8">
             <a href="#solutions" className="text-gray-600 hover:text-gray-900">
               Solutions
             </a>
@@ -30,7 +30,7 @@ export default function HomePage() {
             href="https://calendly.com/jaredgaynes/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex"
+            className="inline-flex justify-self-end"
           >
             <Button className="bg-gray-900 hover:bg-gray-800 text-white">Talk to a data expert</Button>
           </a>
