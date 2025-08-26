@@ -12,26 +12,33 @@ export default function HomePage() {
           <div className="text-2xl font-bold text-gray-900">Cradle</div>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <NextLink href="#" className="text-gray-600 hover:text-gray-900">
+            <a href="#solutions" className="text-gray-600 hover:text-gray-900">
               Solutions
-            </NextLink>
-            <NextLink href="#" className="text-gray-600 hover:text-gray-900">
+            </a>
+            <a href="#industries" className="text-gray-600 hover:text-gray-900">
               Industries
-            </NextLink>
-            <NextLink href="#" className="text-gray-600 hover:text-gray-900">
+            </a>
+            <a href="#hero" className="text-gray-600 hover:text-gray-900">
               About
-            </NextLink>
-            <NextLink href="#" className="text-gray-600 hover:text-gray-900">
+            </a>
+            <a href="mailto:Jared@usecradle.com" className="text-gray-600 hover:text-gray-900">
               Contact
-            </NextLink>
+            </a>
           </nav>
 
-          <Button className="bg-gray-900 hover:bg-gray-800 text-white">Talk to a data expert</Button>
+          <a
+            href="https://calendly.com/jaredgaynes/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex"
+          >
+            <Button className="bg-gray-900 hover:bg-gray-800 text-white">Talk to a data expert</Button>
+          </a>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24">
+      <section id="hero" className="py-16 md:py-24">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Modern data infrastructure
@@ -45,18 +52,27 @@ export default function HomePage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gray-900 hover:bg-gray-800 text-white">
-              Talk to a data expert →
-            </Button>
-            <Button variant="ghost" size="lg" className="text-gray-600 hover:text-gray-900">
-              Learn More
-            </Button>
+            <a
+              href="https://calendly.com/jaredgaynes/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex"
+            >
+              <Button size="lg" className="bg-gray-900 hover:bg-gray-800 text-white">
+                Talk to a data expert →
+              </Button>
+            </a>
+            <a href="mailto:Jared@usecradle.com" className="inline-flex">
+              <Button variant="ghost" size="lg" className="text-gray-600 hover:text-gray-900">
+                Learn More
+              </Button>
+            </a>
           </div>
         </div>
       </section>
 
       {/* Built for Complex Operations */}
-      <section className="py-16 bg-gray-50">
+      <section id="solutions" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Built for complex operations</h2>
@@ -132,7 +148,7 @@ export default function HomePage() {
       </section>
 
       {/* Industries Section */}
-      <section className="py-16">
+      <section id="industries" className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -184,7 +200,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gray-900 text-white">
+      <section id="contact" className="py-16 bg-gray-900 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to unify your portfolio data?</h2>
 
@@ -195,16 +211,25 @@ export default function HomePage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-              Talk to a data expert
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-gray-600 text-gray-300 hover:bg-gray-800 bg-transparent"
+            <a
+              href="https://calendly.com/jaredgaynes/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex"
             >
-              Learn More →
-            </Button>
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                Talk to a data expert
+              </Button>
+            </a>
+            <a href="mailto:Jared@usecradle.com" className="inline-flex">
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-gray-600 text-gray-300 hover:bg-gray-800 bg-transparent"
+              >
+                Learn More →
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -226,24 +251,24 @@ export default function HomePage() {
               <h3 className="font-semibold text-gray-900 mb-4">Product</h3>
               <ul className="space-y-2">
                 <li>
-                  <NextLink href="#" className="text-gray-600 hover:text-gray-900 text-sm">
+                  <a href="#solutions" className="text-gray-600 hover:text-gray-900 text-sm">
                     Solutions
-                  </NextLink>
+                  </a>
                 </li>
                 <li>
-                  <NextLink href="#" className="text-gray-600 hover:text-gray-900 text-sm">
+                  <a href="#industries" className="text-gray-600 hover:text-gray-900 text-sm">
                     Industries
-                  </NextLink>
+                  </a>
                 </li>
                 <li>
-                  <NextLink href="#" className="text-gray-600 hover:text-gray-900 text-sm">
+                  <a href="#contact" className="text-gray-600 hover:text-gray-900 text-sm">
                     Pricing
-                  </NextLink>
+                  </a>
                 </li>
                 <li>
-                  <NextLink href="#" className="text-gray-600 hover:text-gray-900 text-sm">
+                  <a href="#solutions" className="text-gray-600 hover:text-gray-900 text-sm">
                     Documentation
-                  </NextLink>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -253,24 +278,29 @@ export default function HomePage() {
               <h3 className="font-semibold text-gray-900 mb-4">Company</h3>
               <ul className="space-y-2">
                 <li>
-                  <NextLink href="#" className="text-gray-600 hover:text-gray-900 text-sm">
+                  <a href="#hero" className="text-gray-600 hover:text-gray-900 text-sm">
                     About
-                  </NextLink>
+                  </a>
                 </li>
                 <li>
-                  <NextLink href="#" className="text-gray-600 hover:text-gray-900 text-sm">
+                  <a href="#solutions" className="text-gray-600 hover:text-gray-900 text-sm">
                     Blog
-                  </NextLink>
+                  </a>
                 </li>
                 <li>
-                  <NextLink href="#" className="text-gray-600 hover:text-gray-900 text-sm">
+                  <a href="#solutions" className="text-gray-600 hover:text-gray-900 text-sm">
                     Careers
-                  </NextLink>
+                  </a>
                 </li>
                 <li>
-                  <NextLink href="#" className="text-gray-600 hover:text-gray-900 text-sm">
+                  <a
+                    href="https://calendly.com/jaredgaynes/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-gray-900 text-sm"
+                  >
                     Contact
-                  </NextLink>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -281,24 +311,24 @@ export default function HomePage() {
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-500 text-sm">© 2025 Cradle Labs Inc. All Rights Reserved</p>
               <div className="flex space-x-6 mt-4 md:mt-0">
-                <NextLink href="#" className="text-gray-400 hover:text-gray-600">
+                <a href="#hero" className="text-gray-400 hover:text-gray-600">
                   <span className="sr-only">LinkedIn</span>
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
                     
                   </svg>
-                </NextLink>
-                <NextLink href="#" className="text-gray-400 hover:text-gray-600">
+                </a>
+                <a href="#hero" className="text-gray-400 hover:text-gray-600">
                   <span className="sr-only">Twitter</span>
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
                     
                   </svg>
-                </NextLink>
-                <NextLink href="#" className="text-gray-400 hover:text-gray-600">
+                </a>
+                <a href="#hero" className="text-gray-400 hover:text-gray-600">
                   <span className="sr-only">GitHub</span>
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
                     
                   </svg>
-                </NextLink>
+                </a>
               </div>
             </div>
           </div>
