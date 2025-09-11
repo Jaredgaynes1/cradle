@@ -26,7 +26,7 @@ export default function HomePage() {
               width={50}
               height={50}
             />
-            <div className="text-4xl font-bold text-gray-900 justify-self-start">
+            <div className="text-5xl font-bold text-gray-900 justify-self-start">
               Cradle
             </div>
           </div>
