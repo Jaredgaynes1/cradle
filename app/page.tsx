@@ -13,6 +13,9 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
+const FONT_COLOR = 'rgb(78, 161, 187)';
+
+
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
@@ -68,7 +71,7 @@ export default function HomePage() {
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Modern data infrastructure
             <br />
-            for <span className="text-blue-600">real-world operations</span>
+            for <span style={{color: 'rgb(78, 161, 187)'}}>real-world operations</span>
           </h1>
 
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
@@ -120,7 +123,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <Card className="border-0 shadow-sm">
               <CardContent className="p-6">
-                <Database className="h-8 w-8 text-blue-600 mb-4" />
+                <Database className="h-8 w-8 mb-4" style={{color: 'rgb(78, 161, 187)'}} />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Data Consolidation
                 </h3>
@@ -133,7 +136,7 @@ export default function HomePage() {
 
             <Card className="border-0 shadow-sm">
               <CardContent className="p-6">
-                <BarChart3 className="h-8 w-8 text-blue-600 mb-4" />
+                <BarChart3 className="h-8 w-8 mb-4" style={{color: FONT_COLOR}} />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   System Integration
                 </h3>
@@ -146,7 +149,7 @@ export default function HomePage() {
 
             <Card className="border-0 shadow-sm">
               <CardContent className="p-6">
-                <BarChart3 className="h-8 w-8 text-blue-600 mb-4" />
+                <BarChart3 className="h-8 w-8 mb-4" style={{color: FONT_COLOR}} />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Operational Analytics
                 </h3>
@@ -159,7 +162,7 @@ export default function HomePage() {
 
             <Card className="border-0 shadow-sm">
               <CardContent className="p-6">
-                <Shield className="h-8 w-8 text-blue-600 mb-4" />
+                <Shield className="h-8 w-8 mb-4" style={{color: FONT_COLOR}} />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Managed Infrastructure
                 </h3>
@@ -172,7 +175,7 @@ export default function HomePage() {
 
             <Card className="border-0 shadow-sm">
               <CardContent className="p-6">
-                <Zap className="h-8 w-8 text-blue-600 mb-4" />
+                <Zap className="h-8 w-8 mb-4" style={{color: FONT_COLOR}} />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Rapid Deployment
                 </h3>
@@ -185,7 +188,7 @@ export default function HomePage() {
 
             <Card className="border-0 shadow-sm">
               <CardContent className="p-6">
-                <Users className="h-8 w-8 text-blue-600 mb-4" />
+                <Users className="h-8 w-8 mb-4" style={{color: FONT_COLOR}} />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Data Experts{" "}
                 </h3>
@@ -216,7 +219,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="border border-gray-200 hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
-                <Anchor className="h-8 w-8 text-blue-600 mb-4" />
+                <Anchor className="h-8 w-8 mb-4" style={{color: FONT_COLOR}} />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Marinas
                 </h3>
@@ -230,7 +233,7 @@ export default function HomePage() {
 
             <Card className="border border-gray-200 hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
-                <Building2 className="h-8 w-8 text-blue-600 mb-4" />
+                <Building2 className="h-8 w-8 mb-4" style={{color: FONT_COLOR}} />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Property Management
                 </h3>
@@ -244,7 +247,7 @@ export default function HomePage() {
 
             <Card className="border border-gray-200 hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
-                <Truck className="h-8 w-8 text-blue-600 mb-4" />
+                <Truck className="h-8 w-8 mb-4" style={{color: FONT_COLOR}} />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Logistics & Transport
                 </h3>
@@ -281,7 +284,8 @@ export default function HomePage() {
             >
               <Button
                 size="lg"
-                className="bg-blue-600 hover:bg-blue-700 text-white"
+                className="text-white"
+                style={{backgroundColor: FONT_COLOR}}
               >
                 Talk to a data expert
               </Button>
