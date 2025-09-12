@@ -15,7 +15,6 @@ import Image from "next/image";
 
 const FONT_COLOR = 'rgb(78, 161, 187)';
 
-
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
@@ -266,7 +265,7 @@ export default function HomePage() {
       <section id="contact" className="py-16 bg-gray-900 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to unify your portfolio data?
+            Ready to unify your data?
           </h2>
 
           <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto">
