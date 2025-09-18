@@ -3,7 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import {
   Anchor,
   Building2,
-  Truck,
   Factory,
   Database,
   BarChart3,
@@ -17,11 +16,11 @@ const FONT_COLOR = 'rgb(78, 161, 187)';
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       {/* Header */}
       <header className="border-b border-gray-200">
-        <div className="container mx-auto px-4 py-4 grid grid-cols-3 items-center">
-          <div className="flex items-baseline gap-3">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 py-4 grid grid-cols-1 md:grid-cols-3 items-center">
+          <div className="flex items-baseline gap-3 justify-self-center md:justify-self-start">
             <Image
               src="/cradle-logo.svg"
               alt="Cradle Logo"
@@ -55,9 +54,9 @@ export default function HomePage() {
             href="https://calendly.com/jaredgaynes/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex justify-self-end"
+            className="hidden md:inline-flex justify-self-end"
           >
-            <Button className="bg-gray-900 hover:bg-gray-800 text-white">
+            <Button className="bg-gray-900 hover:bg-gray-800 text-white w-full md:w-auto">
               Talk to a data expert
             </Button>
           </a>
@@ -66,8 +65,8 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section id="hero" className="py-16 md:py-24">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 text-center">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight break-words">
             Modern data infrastructure
             <br />
             for <span style={{color: 'rgb(78, 161, 187)'}}>real-world operations</span>
@@ -88,7 +87,7 @@ export default function HomePage() {
             >
               <Button
                 size="lg"
-                className="bg-gray-900 hover:bg-gray-800 text-white"
+                className="bg-gray-900 hover:bg-gray-800 text-white w-full sm:w-auto"
               >
                 Talk to a data expert →
               </Button>
@@ -97,9 +96,9 @@ export default function HomePage() {
               <Button
                 variant="ghost"
                 size="lg"
-                className="text-gray-600 hover:text-gray-900"
+                className="text-gray-600 hover:text-gray-900 px-0 w-full sm:w-auto"
               >
-                Learn More
+                <span className="h-full inline-flex items-center justify-center bg-gray-100 text-gray-700 px-8 rounded-md border border-gray-200 w-full sm:w-auto">Learn More</span>
               </Button>
             </a>
           </div>
@@ -108,7 +107,7 @@ export default function HomePage() {
 
       {/* Built for Complex Operations */}
       <section id="solutions" className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Built for complex operations
@@ -121,7 +120,7 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <Card className="border-0 shadow-sm">
-              <CardContent className="p-6">
+              <CardContent className="p-4 sm:p-6">
                 <Database className="h-8 w-8 mb-4" style={{color: 'rgb(78, 161, 187)'}} />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Data Consolidation
@@ -134,7 +133,7 @@ export default function HomePage() {
             </Card>
 
             <Card className="border-0 shadow-sm">
-              <CardContent className="p-6">
+              <CardContent className="p-4 sm:p-6">
                 <BarChart3 className="h-8 w-8 mb-4" style={{color: FONT_COLOR}} />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   System Integration
@@ -147,20 +146,20 @@ export default function HomePage() {
             </Card>
 
             <Card className="border-0 shadow-sm">
-              <CardContent className="p-6">
+              <CardContent className="p-4 sm:p-6">
                 <BarChart3 className="h-8 w-8 mb-4" style={{color: FONT_COLOR}} />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Operational Analytics
                 </h3>
                 <p className="text-gray-600">
-                  Rent roll reporting & actionable insights for management and
+                  Real-time reports & actionable insights for management and
                   optimization.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="border-0 shadow-sm">
-              <CardContent className="p-6">
+              <CardContent className="p-4 sm:p-6">
                 <Shield className="h-8 w-8 mb-4" style={{color: FONT_COLOR}} />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Managed Infrastructure
@@ -173,7 +172,7 @@ export default function HomePage() {
             </Card>
 
             <Card className="border-0 shadow-sm">
-              <CardContent className="p-6">
+              <CardContent className="p-4 sm:p-6">
                 <Zap className="h-8 w-8 mb-4" style={{color: FONT_COLOR}} />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Rapid Deployment
@@ -186,7 +185,7 @@ export default function HomePage() {
             </Card>
 
             <Card className="border-0 shadow-sm">
-              <CardContent className="p-6">
+              <CardContent className="p-4 sm:p-6">
                 <Users className="h-8 w-8 mb-4" style={{color: FONT_COLOR}} />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Data Experts{" "}
@@ -203,7 +202,7 @@ export default function HomePage() {
 
       {/* Industries Section */}
       <section id="industries" className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Specialized expertise across legacy industries
@@ -215,24 +214,24 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <Card className="border border-gray-200 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <Anchor className="h-8 w-8 mb-4" style={{color: FONT_COLOR}} />
+              <CardContent className="p-4 sm:p-6 text-center">
+                <Anchor className="h-8 w-8 mb-4 mx-auto" style={{color: FONT_COLOR}} />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Marinas
                 </h3>
 
                 <p className="text-gray-600 text-sm">
                   Consolidate slip management, maintenance records, and customer
-                  data across marina portfolios.
+                  data across marinas. Increase visibility into occupancy and slip utilization.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="border border-gray-200 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <Building2 className="h-8 w-8 mb-4" style={{color: FONT_COLOR}} />
+              <CardContent className="p-4 sm:p-6 text-center">
+                <Building2 className="h-8 w-8 mb-4 mx-auto" style={{color: FONT_COLOR}} />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Property Management
                 </h3>
@@ -243,34 +242,20 @@ export default function HomePage() {
                 </p>
               </CardContent>
             </Card>
-
-            <Card className="border border-gray-200 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <Truck className="h-8 w-8 mb-4" style={{color: FONT_COLOR}} />
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Logistics & Transport
-                </h3>
-
-                <p className="text-gray-600 text-sm">
-                  Connect fleet management, route optimization, and customer
-                  systems for transport companies.
-                </p>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section id="contact" className="py-16 bg-gray-900 text-white">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to unify your data?
           </h2>
 
           <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto">
             {
-              "Let's discuss how Cradle can help consolidate your fragmented systems and unlock operational insights across your portfolio companies."
+              "Let's discuss how Cradle can help consolidate your fragmented systems and unlock operational insights across your business."
             }
           </p>
 
@@ -283,7 +268,7 @@ export default function HomePage() {
             >
               <Button
                 size="lg"
-                className="text-white"
+                className="text-white w-full sm:w-auto"
                 style={{backgroundColor: FONT_COLOR}}
               >
                 Talk to a data expert
@@ -293,7 +278,7 @@ export default function HomePage() {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-gray-600 text-gray-300 hover:bg-gray-800 bg-transparent"
+                className="border-gray-600 text-gray-300 hover:bg-gray-800 bg-transparent w-full sm:w-auto"
               >
                 Learn More →
               </Button>
