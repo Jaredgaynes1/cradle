@@ -51,7 +51,7 @@ export default function HomePage() {
           </nav>
 
           <a
-            href="https://calendly.com/jaredgaynes/30min"
+            href="https://cal.com/jared-gaynes-vjuiq7/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-flex justify-self-end"
@@ -80,7 +80,8 @@ export default function HomePage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://calendly.com/jaredgaynes/30min"
+              href="https://cal.com/jared-gaynes-vjuiq7/30min"
+              
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex"
@@ -261,7 +262,7 @@ export default function HomePage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://calendly.com/jaredgaynes/30min"
+              href="https://cal.com/jared-gaynes-vjuiq7/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex"
@@ -369,7 +370,7 @@ export default function HomePage() {
                 </li>
                 <li>
                   <a
-                    href="https://calendly.com/jaredgaynes/30min"
+                    href="https://cal.com/jared-gaynes-vjuiq7/30min"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-600 hover:text-gray-900 text-sm"
