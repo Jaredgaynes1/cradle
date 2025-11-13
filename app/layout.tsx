@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Albert_Sans } from 'next/font/google'
 import './globals.css'
+import { PostHogProvider } from '../components/PostHogProvider'
 
 const albertSans = Albert_Sans({ 
   subsets: ['latin'],
@@ -19,7 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={albertSans.variable}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <PostHogProvider>
+          {children}
+        </PostHogProvider>
+      </body>
     </html>
   )
 }
