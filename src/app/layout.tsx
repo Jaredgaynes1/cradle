@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
-import { Odor_Mean_Chey } from 'next/font/google'
+import { Petrona } from 'next/font/google'
 import "../output.css";
 import { PostHogProvider } from '../components/PostHogProvider'
 
-const odorMeanChey = Odor_Mean_Chey({
+
+const petrona = Petrona({
   subsets: ['latin'],
-  weight: '400',
+  weight: ['400', '700'],
   variable: '--font-sans',
 })
 
@@ -20,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={odorMeanChey.variable}>
+    <html lang="en" className={`${petrona.variable}`}>
       <body className="font-sans">
         <PostHogProvider>
           {children}

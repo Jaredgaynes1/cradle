@@ -4,11 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 import { TalkToTheFounderButton } from "./ui/talk-to-the-founder-button";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,19 +42,28 @@ export function Navbar() {
                 width={50}
                 height={50}
               />
-              <div className="text-5xl font-bold  justify-self-start">
+              <div className="text-5xl font-bold justify-self-start">
                 Cradle
               </div>
             </Link>
 
             <div className="hidden md:flex items-center justify-center space-x-10 text-xl">
-              <Link href="/solutions" className="hover:text-teal-500">
+              <Link
+                href="/solutions"
+                className={pathname === "/solutions" ? "text-teal-500" : "hover:text-teal-500"}
+              >
                 Solutions
               </Link>
-              <Link href="/blog" className="hover:text-teal-500">
-                blog
+              <Link
+                href="/blog"
+                className={pathname === "/blog" ? "text-teal-500" : "hover:text-teal-500"}
+              >
+                Blog
               </Link>
-              <Link href="/about" className="hover:text-teal-500">
+              <Link
+                href="/about"
+                className={pathname === "/about" ? "text-teal-500" : "hover:text-teal-500"}
+              >
                 About
               </Link>
             </div>
