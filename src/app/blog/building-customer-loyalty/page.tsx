@@ -1,5 +1,19 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Building Customer Loyalty in the Marina Industry',
+  description: 'Automated communication strategies that keep boaters engaged without the manual work. Improve retention by 5-10% with personalized automation.',
+  keywords: ['marina customer loyalty', 'boater retention', 'marina marketing automation', 'customer engagement'],
+  openGraph: {
+    title: 'Building Customer Loyalty in the Marina Industry',
+    description: 'Automated strategies for better customer retention',
+    url: 'https://usecradle.com/blog/building-customer-loyalty',
+    type: 'article',
+    publishedTime: '2026-01-05T00:00:00.000Z',
+  },
+};
 
 export default function BlogPost() {
   return (

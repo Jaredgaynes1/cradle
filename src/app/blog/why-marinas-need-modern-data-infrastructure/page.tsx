@@ -1,5 +1,19 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Why Marinas Need Modern Data Infrastructure',
+  description: 'How legacy industries are being transformed by real-time data analytics and why your marina can\'t afford to wait. Learn about the ROI of modern data infrastructure.',
+  keywords: ['marina data infrastructure', 'marina analytics', 'marina technology', 'data infrastructure for marinas'],
+  openGraph: {
+    title: 'Why Marinas Need Modern Data Infrastructure',
+    description: 'Real-time data analytics is transforming the marina industry',
+    url: 'https://usecradle.com/blog/why-marinas-need-modern-data-infrastructure',
+    type: 'article',
+    publishedTime: '2026-01-13T00:00:00.000Z',
+  },
+};
 
 export default function BlogPost() {
   return (

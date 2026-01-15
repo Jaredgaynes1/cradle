@@ -1,5 +1,19 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'The Hidden Costs of Excel Spreadsheets',
+  description: 'Discover how manual reporting is costing your marina thousands in lost revenue and wasted time. Calculate the true cost of spreadsheet-based operations.',
+  keywords: ['excel costs', 'marina reporting', 'manual processes', 'spreadsheet alternatives'],
+  openGraph: {
+    title: 'The Hidden Costs of Excel Spreadsheets',
+    description: 'Manual reporting costs marinas $50K-75K per year in wasted time',
+    url: 'https://usecradle.com/blog/hidden-costs-of-excel',
+    type: 'article',
+    publishedTime: '2026-01-10T00:00:00.000Z',
+  },
+};
 
 export default function BlogPost() {
   return (

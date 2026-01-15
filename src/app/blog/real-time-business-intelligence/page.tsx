@@ -1,5 +1,19 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Real-Time Business Intelligence for Marina Operators',
+  description: 'How instant access to your data transforms decision-making and operational efficiency. Stop relying on month-old reports.',
+  keywords: ['marina business intelligence', 'real-time marina data', 'marina dashboards', 'marina analytics'],
+  openGraph: {
+    title: 'Real-Time Business Intelligence for Marina Operators',
+    description: 'Transform decision-making with real-time data access',
+    url: 'https://usecradle.com/blog/real-time-business-intelligence',
+    type: 'article',
+    publishedTime: '2026-01-01T00:00:00.000Z',
+  },
+};
 
 export default function BlogPost() {
   return (

@@ -11,6 +11,17 @@ import {
 } from "@tabler/icons-react";
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Blog - Marina Management Insights & Best Practices',
+  description: 'Expert insights on marina management, data analytics, dry storage optimization, and automation. Learn how to modernize your marina operations.',
+  openGraph: {
+    title: 'Cradle Blog - Marina Management Insights',
+    description: 'Expert insights on marina management and data infrastructure',
+    url: 'https://usecradle.com/blog',
+  },
+};
 
 export default function BlogPage() {
   const Skeleton = () => (
@@ -97,7 +108,7 @@ export default function BlogPage() {
       header: (
         <div className="flex justify-center items-center content-center">
           <Image
-            src="images/blog1.png"
+            src="images/blog5.png"
             alt="Cradle Logo"
             className="rounded-xl"
             width={150}
@@ -115,7 +126,7 @@ export default function BlogPage() {
       header: (
         <div className="flex justify-center items-center content-center">
           <Image
-            src="images/blog1.png"
+            src="images/blog6.png"
             alt="Cradle Logo"
             width={150}
             height={100}
@@ -132,7 +143,7 @@ export default function BlogPage() {
       header: (
         <div className="flex justify-center items-center content-center">
           <Image
-            src="images/blog1.png"
+            src="images/blog7.png"
             alt="Cradle Logo"
             width={150}
             height={100}

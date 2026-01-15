@@ -1,11 +1,12 @@
 export const CALL_TO_ACTION_URL = "https://calendly.com/cradle-data/30min";
 export const CALL_TO_ACTION_TEXT = "Talk to the Founder";
+export const PRODUCT_SECTION_HEADER = "Product";
 
 export const HERO_HEADLINE = "Supercharge your Marina";
 export const HERO_SUBHEADLINE =
   "Cradle connects your existing systems into one clean layer of data so you can analyze, automate, and grow without replacing what works.";
-  
-export const CUSTOMER_TESTIMONIALS =  [
+
+export const CUSTOMER_TESTIMONIALS = [
   {
     quote:
       "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",

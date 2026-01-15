@@ -1,5 +1,19 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'System Integration 101: Connecting Your Marina Tech Stack',
+  description: 'A practical guide to unifying your accounting, PMS, and operations systems into one data layer. Learn about marina system integration.',
+  keywords: ['marina system integration', 'marina software integration', 'PMS integration', 'marina tech stack'],
+  openGraph: {
+    title: 'System Integration 101: Connecting Your Marina Tech Stack',
+    description: 'Practical guide to integrating your marina systems',
+    url: 'https://usecradle.com/blog/system-integration-101',
+    type: 'article',
+    publishedTime: '2026-01-03T00:00:00.000Z',
+  },
+};
 
 export default function BlogPost() {
   return (

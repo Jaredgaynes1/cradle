@@ -1,5 +1,19 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Case Study: 30% Revenue Increase Through Data Analytics',
+  description: 'How one marina operator used Cradle to identify untapped revenue streams and optimize pricing, resulting in $700K additional annual revenue.',
+  keywords: ['marina case study', 'marina revenue optimization', 'data analytics ROI', 'marina success story'],
+  openGraph: {
+    title: 'Case Study: 30% Revenue Increase Through Data Analytics',
+    description: 'Real results: $700K additional revenue from data optimization',
+    url: 'https://usecradle.com/blog/case-study-revenue-increase',
+    type: 'article',
+    publishedTime: '2025-12-28T00:00:00.000Z',
+  },
+};
 
 export default function BlogPost() {
   return (

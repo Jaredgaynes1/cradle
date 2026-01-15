@@ -83,7 +83,7 @@ export function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
-            className="container mx-auto px-4 sm:px-6 md:px-8 py-4"
+            className="container mx-auto px-4 sm:px-6 md:px-8 py-4 justify-left flex items-center space-x-4 backdrop-blur-sm bg-white/70 border-b border-gray-200"
           >
             <a
               href="https://cal.com/jared-gaynes-vjuiq7/30min"
@@ -96,7 +96,7 @@ export function Navbar() {
                 animate={{ width: "100%" }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
               >
-                <TalkToTheFounderButton />
+                <TalkToTheFounderButton className="w-full" />
               </motion.div>
             </a>
           </motion.div>

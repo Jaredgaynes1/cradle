@@ -1,6 +1,20 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import Image from "next/image";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'AI-Powered Dry Storage Optimization',
+  description: 'Learn how machine learning can maximize your storage capacity and increase NOI by 15-30%. Real results from AI-powered boat storage optimization.',
+  keywords: ['dry storage optimization', 'AI boat storage', 'marina capacity optimization', 'machine learning marinas'],
+  openGraph: {
+    title: 'AI-Powered Dry Storage Optimization',
+    description: 'Increase storage capacity by 15-30% with AI optimization',
+    url: 'https://usecradle.com/blog/ai-storage-optimization',
+    type: 'article',
+    publishedTime: '2026-01-08T00:00:00.000Z',
+  },
+};
 
 export default function BlogPost() {
   return (
