@@ -1,16 +1,23 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Database, Zap, Users, BarChart3 } from "lucide-react";
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Solutions - Marina Management Platform',
-  description: 'Comprehensive data infrastructure solutions for marinas: real-time business intelligence, marketing automation, system integration, and AI-powered optimization.',
-  keywords: ['marina solutions', 'marina software', 'marina management platform', 'marina technology'],
+  title: "Solutions - Marina Management Platform",
+  description:
+    "Comprehensive data infrastructure solutions for marinas: real-time business intelligence, marketing automation, system integration, and AI-powered optimization.",
+  keywords: [
+    "marina solutions",
+    "marina software",
+    "marina management platform",
+    "marina technology",
+  ],
   openGraph: {
-    title: 'Cradle Solutions - Complete Marina Data Platform',
-    description: 'Real-time intelligence, automation, and optimization for modern marinas',
-    url: 'https://usecradle.com/solutions',
+    title: "Cradle Solutions - Complete Marina Data Platform",
+    description:
+      "Real-time intelligence, automation, and optimization for modern marinas",
+    url: "https://usecradle.com/solutions",
   },
 };
 
@@ -25,8 +32,9 @@ export default function SolutionsPage() {
             Complete Data Infrastructure for Marinas
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Everything you need to modernize your marina operations—from real-time reporting
-            to AI-powered optimization—in one integrated platform.
+            Everything you need to modernize your marina operations—from
+            real-time reporting to AI-powered optimization—in one integrated
+            platform.
           </p>
         </div>
 
@@ -43,15 +51,18 @@ export default function SolutionsPage() {
                   Real-Time Business Intelligence
                 </h2>
                 <p className="text-xl text-gray-700 leading-relaxed">
-                  Stop building reports in Excel. Get instant visibility into your entire
-                  operation with automated dashboards and real-time data.
+                  Stop building reports in Excel. Get instant visibility into
+                  your entire operation with automated dashboards and real-time
+                  data.
                 </p>
               </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div>
-                <h3 className="text-2xl font-semibold mb-4 text-teal-800">Key Features</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-teal-800">
+                  Key Features
+                </h3>
                 <ul className="space-y-3 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-teal-500 mr-2">•</span>
@@ -72,7 +83,9 @@ export default function SolutionsPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-2xl font-semibold mb-4 text-teal-800">Benefits</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-teal-800">
+                  Benefits
+                </h3>
                 <ul className="space-y-3 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-teal-500 mr-2">✓</span>
@@ -106,15 +119,17 @@ export default function SolutionsPage() {
                   Marketing & Customer Loyalty Automation
                 </h2>
                 <p className="text-xl text-gray-700 leading-relaxed">
-                  Keep customers engaged with automated, personalized communications that
-                  feel human—without the manual work.
+                  Keep customers engaged with automated, personalized
+                  communications that feel human—without the manual work.
                 </p>
               </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div>
-                <h3 className="text-2xl font-semibold mb-4 text-blue-800">Key Features</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-blue-800">
+                  Key Features
+                </h3>
                 <ul className="space-y-3 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-blue-500 mr-2">•</span>
@@ -135,7 +150,9 @@ export default function SolutionsPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-2xl font-semibold mb-4 text-blue-800">Benefits</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-blue-800">
+                  Benefits
+                </h3>
                 <ul className="space-y-3 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-blue-500 mr-2">✓</span>
@@ -169,15 +186,17 @@ export default function SolutionsPage() {
                   System Integration & Data Layer
                 </h2>
                 <p className="text-xl text-gray-700 leading-relaxed">
-                  Connect all your existing tools into one unified data layer. No more
-                  manual data entry or switching between systems.
+                  Connect all your existing tools into one unified data layer.
+                  No more manual data entry or switching between systems.
                 </p>
               </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div>
-                <h3 className="text-2xl font-semibold mb-4 text-purple-800">Key Features</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-purple-800">
+                  Key Features
+                </h3>
                 <ul className="space-y-3 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-purple-500 mr-2">•</span>
@@ -198,7 +217,9 @@ export default function SolutionsPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-2xl font-semibold mb-4 text-purple-800">Benefits</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-purple-800">
+                  Benefits
+                </h3>
                 <ul className="space-y-3 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-purple-500 mr-2">✓</span>
@@ -232,15 +253,17 @@ export default function SolutionsPage() {
                   AI-Powered Dry Storage Optimization
                 </h2>
                 <p className="text-xl text-gray-700 leading-relaxed">
-                  Maximize your storage capacity with machine learning that automatically
-                  assigns boats to optimal slips.
+                  Maximize your storage capacity with machine learning that
+                  automatically assigns boats to optimal slips.
                 </p>
               </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div>
-                <h3 className="text-2xl font-semibold mb-4 text-orange-800">Key Features</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-orange-800">
+                  Key Features
+                </h3>
                 <ul className="space-y-3 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-orange-500 mr-2">•</span>
@@ -261,7 +284,9 @@ export default function SolutionsPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-2xl font-semibold mb-4 text-orange-800">Benefits</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-orange-800">
+                  Benefits
+                </h3>
                 <ul className="space-y-3 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-orange-500 mr-2">✓</span>
@@ -286,25 +311,24 @@ export default function SolutionsPage() {
         </div>
 
         {/* CTA Section */}
-        <section className="mt-24 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-3xl p-12 text-center text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Transform Your Marina?
-          </h2>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
-            Schedule a 30-minute call to see how Cradle's complete platform can work
-            for your operation.
+        <section className="bg-teal-50 -mx-4 px-4 md:-mx-8 md:px-8 py-12 rounded-2xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Join Us</h2>
+          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+            We're working with marina operators across the country to modernize
+            their operations. If you're ready to stop fighting your systems and
+            start growing your business, let's talk.
           </p>
           <a
             href="https://cal.com/jared-gaynes-vjuiq7/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-teal-600 px-10 py-5 rounded-lg text-xl font-semibold hover:bg-gray-50 transition shadow-lg"
+            className="inline-block bg-teal-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-teal-600 transition"
           >
-            Schedule a Demo
+            Schedule a Call
           </a>
         </section>
       </main>
       <Footer />
     </div>
-  )
-} 
+  );
+}

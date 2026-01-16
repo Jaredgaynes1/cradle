@@ -4,7 +4,7 @@ export const PRODUCT_SECTION_HEADER = "Product";
 
 export const HERO_HEADLINE = "Supercharge your Marina";
 export const HERO_SUBHEADLINE =
-  "Cradle connects your existing systems into one clean layer of data so you can analyze, automate, and grow without replacing what works.";
+  "Analyze, automate, and grow without replacing what works.";
 
 export const CUSTOMER_TESTIMONIALS = [
   {

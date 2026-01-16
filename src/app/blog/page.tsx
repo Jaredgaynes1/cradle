@@ -128,6 +128,7 @@ export default function BlogPage() {
           <Image
             src="images/blog6.png"
             alt="Cradle Logo"
+            className="rounded-xl"
             width={150}
             height={100}
           />
