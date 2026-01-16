@@ -124,9 +124,9 @@ export const BusinessIntelligence = () => {
                 alt="Reporting"
                 width={380}
                 height={300}
-                className={`w-full absolute top-0 left-1/2 -translate-x-1/2 h-auto rounded-lg shadow-xl transform rotate-2 cursor-pointer transition-all duration-500 ease-out ${
+                className={`w-full absolute top-0 left-60 -translate-x-1/2 h-auto rounded-lg shadow-xl transform rotate-2 cursor-pointer transition-all duration-500 ease-out ${
                   activeImage === 2
-                    ? "z-30 scale-105 opacity-100 shadow-2xl"
+                    ? "z-30 scale-100 opacity-100 shadow-2xl"
                     : "z-21 scale-95  hover:opacity-100"
                 }`}
                 onClick={() => handleImageInteraction(2)}
@@ -137,9 +137,9 @@ export const BusinessIntelligence = () => {
                 alt="Reporting"
                 width={380}
                 height={300}
-                className={`w-full absolute top-10 -right-20 h-auto rounded-lg shadow-xl transform rotate-8 cursor-pointer transition-all duration-500 ease-out ${
+                className={`w-full absolute top-10 -right-10 h-auto rounded-lg shadow-xl transform rotate-8 cursor-pointer transition-all duration-500 ease-out ${
                   activeImage === 3
-                    ? "z-30 scale-105 opacity-100 shadow-2xl"
+                    ? "z-30 scale-100 opacity-100 shadow-2xl"
                     : "z-19 scale-95 hover:opacity-100"
                 }`}
                 onClick={() => handleImageInteraction(3)}
