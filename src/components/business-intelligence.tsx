@@ -105,14 +105,16 @@ export const BusinessIntelligence = () => {
             </div>
 
             {/* Desktop: Stacked Layout */}
-            <div className="hidden md:block relative w-full h-[500px]">
+            <div className="hidden md:block relative w-full h-[600px] overflow-visible">
               <Image
                 src="/images/rent_roll.png"
                 alt="Reporting"
-                width={700}
-                height={600}
-                className={`absolute top-6 -left-32 h-auto rounded-lg shadow-xl transform -rotate-8 cursor-pointer transition-all ${
-                  activeImage === 1 ? "z-30" : "z-20"
+                width={380}
+                height={300}
+                className={`w-full absolute top-0 -left-30 h-auto rounded-lg shadow-xl transform -rotate-6 cursor-pointer transition-all duration-500 ease-out ${
+                  activeImage === 1
+                    ? "z-30 scale-105 opacity-100 shadow-2xl"
+                    : "z-20 scale-95  hover:opacity-100"
                 }`}
                 onClick={() => handleImageInteraction(1)}
                 onMouseEnter={() => handleImageInteraction(1)}
@@ -120,10 +122,12 @@ export const BusinessIntelligence = () => {
               <Image
                 src="/images/service_work_dashboard.png"
                 alt="Reporting"
-                width={600}
-                height={500}
-                className={`absolute top-0 left-0 h-auto rounded-lg shadow-xl transform cursor-pointer transition-all ${
-                  activeImage === 2 ? "z-30" : "z-21"
+                width={380}
+                height={300}
+                className={`w-full absolute top-0 left-1/2 -translate-x-1/2 h-auto rounded-lg shadow-xl transform rotate-2 cursor-pointer transition-all duration-500 ease-out ${
+                  activeImage === 2
+                    ? "z-30 scale-105 opacity-100 shadow-2xl"
+                    : "z-21 scale-95  hover:opacity-100"
                 }`}
                 onClick={() => handleImageInteraction(2)}
                 onMouseEnter={() => handleImageInteraction(2)}
@@ -131,10 +135,12 @@ export const BusinessIntelligence = () => {
               <Image
                 src="/images/analytics_dashboard.png"
                 alt="Reporting"
-                width={400}
-                height={600}
-                className={`absolute -right-32 h-auto rounded-lg shadow-xl transform rotate-7 cursor-pointer transition-all ${
-                  activeImage === 3 ? "z-30" : "z-19"
+                width={380}
+                height={300}
+                className={`w-full absolute top-10 -right-20 h-auto rounded-lg shadow-xl transform rotate-8 cursor-pointer transition-all duration-500 ease-out ${
+                  activeImage === 3
+                    ? "z-30 scale-105 opacity-100 shadow-2xl"
+                    : "z-19 scale-95 hover:opacity-100"
                 }`}
                 onClick={() => handleImageInteraction(3)}
                 onMouseEnter={() => handleImageInteraction(3)}
