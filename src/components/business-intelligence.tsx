@@ -86,7 +86,7 @@ export const BusinessIntelligence = () => {
           <div className="text-4xl md:text-5xl font-bold mb-7">
             {BUSINESS_INTELLIGENCE_TITLE}
           </div>
-          <ul className="text-gray-600 text-xl md:text-xl leading-relaxed space-y-3">
+          <ul className="text-gray-600 text-xl md:text-2xl leading-relaxed space-y-3">
             {BUSINESS_INTELLIGENCE_SUBTITLE.map((item, index) => (
               <li key={index} className="flex items-start">
                 <span className="text-teal-500 mr-3 text-4xl leading-none">•</span>

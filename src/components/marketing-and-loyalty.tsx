@@ -13,7 +13,7 @@ export const MarketingAndLoyalty = () => {
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="flex flex-col gap-8 sm:text-center md:text-left p-8">
           <div className="text-4xl md:text-5xl font-bold mb-7">{MARKETING_LOYALTY_TITLE}</div>
-          <ul className="text-gray-600 text-xl md:text-xl leading-relaxed space-y-3">
+          <ul className="text-gray-600 text-xl md:text-2xl leading-relaxed space-y-3">
             {MARKETING_LOYALTY_SUBTITLE.map((item, index) => (
               <li key={index} className="flex items-start">
                 <span className="text-teal-500 mr-3 text-4xl leading-none">•</span>
