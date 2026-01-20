@@ -625,6 +625,9 @@
   .h-min {
     height: min-content;
   }
+  .min-h-150 {
+    min-height: calc(var(--spacing) * 150);
+  }
   .min-h-200 {
     min-height: calc(var(--spacing) * 200);
   }

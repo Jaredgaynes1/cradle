@@ -87,6 +87,7 @@ export const BUSINESS_INTELLIGENCE_IMAGES = [
 // Marketing & Loyalty Section
 export const MARKETING_LOYALTY_TITLE = "Marketing & Loyalty";
 export const MARKETING_LOYALTY_SUBTITLE = [
+  "Build stronger relationships with boaters through highly personalized communications and custom loyalty programs designed for your marina",
   "Automated boater communications that feel personal",
   "Keep your customers engaged without the manual work",
 ];
