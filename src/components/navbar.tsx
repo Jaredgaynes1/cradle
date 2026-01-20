@@ -7,6 +7,13 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 import { TalkToTheFounderButton } from "./ui/talk-to-the-founder-button";
+import {
+  COMPANY_NAME,
+  LOGO_SRC,
+  LOGO_ALT,
+  NAV_LINKS,
+  CALL_TO_ACTION_URL,
+} from "@/constants";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,40 +43,30 @@ export function Navbar() {
               href="/"
               className="flex items-baseline gap-3 justify-self-center md:justify-self-start cursor-pointer"
             >
-              <Image
-                src="/cradle-logo.svg"
-                alt="Cradle Logo"
-                width={50}
-                height={50}
-              />
+              <Image src={LOGO_SRC} alt={LOGO_ALT} width={50} height={50} />
               <div className="text-5xl font-bold justify-self-start">
-                Cradle
+                {COMPANY_NAME}
               </div>
             </Link>
 
             <div className="hidden md:flex items-center justify-center space-x-10 text-xl">
-              <Link
-                href="/solutions"
-                className={pathname === "/solutions" ? "text-teal-500" : "hover:text-teal-500"}
-              >
-                Solutions
-              </Link>
-              <Link
-                href="/blog"
-                className={pathname === "/blog" ? "text-teal-500" : "hover:text-teal-500"}
-              >
-                Blog
-              </Link>
-              <Link
-                href="/about"
-                className={pathname === "/about" ? "text-teal-500" : "hover:text-teal-500"}
-              >
-                About
-              </Link>
+              {NAV_LINKS.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={
+                    pathname === link.href
+                      ? "text-teal-500"
+                      : "hover:text-teal-500"
+                  }
+                >
+                  {link.label}
+                </Link>
+              ))}
             </div>
 
             <a
-              href="https://cal.com/jared-gaynes-vjuiq7/30min"
+              href={CALL_TO_ACTION_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:inline-flex justify-self-end"
@@ -86,7 +83,7 @@ export function Navbar() {
             className=" w-fullcontainer mx-auto px-4 sm:px-6 md:px-8 py-4 justify-left flex items-center space-x-4 backdrop-blur-sm bg-white/70 border-b border-gray-200"
           >
             <a
-              href="https://cal.com/jared-gaynes-vjuiq7/30min"
+              href={CALL_TO_ACTION_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full"

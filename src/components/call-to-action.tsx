@@ -4,7 +4,6 @@ import { TalkToTheFounderButton } from "./ui/talk-to-the-founder-button";
 export const CallToAction = () => {
   return (
     <section
-      id="contact"
       className="py-16 bg-gray-900 bg-white/10 backdrop-blur-sm"
     >
       <div className="container mx-auto px-4 sm:px-6 md:px-8 text-center">

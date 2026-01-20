@@ -3,6 +3,11 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Tabs } from "./ui/tabs";
+import {
+  BUSINESS_INTELLIGENCE_TITLE,
+  BUSINESS_INTELLIGENCE_SUBTITLE,
+  BUSINESS_INTELLIGENCE_IMAGES,
+} from "@/constants";
 
 export function BusinessIntelligenceTabs() {
   const tabs = [
@@ -66,88 +71,29 @@ export const BusinessIntelligence = () => {
   };
 
   return (
-    <div className="w-full justify-center items-center flex flex-col py-16 px-4 md:px-16 border-b border-gray-200">
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-start max-w-6xl">
-        <div className="flex flex-col gap-8 md:w-2/3 sm:text-center md:text-left">
-          <div className="text-4xl md:text-5xl">
-            Reporting & Business Intelligence
-          </div>
-          <div className="text-gray-600 text-2xl md:text-3xl leading-relaxed">
-            Cradle connects all of your tools into one clean data layer to give
-            you real-time business intelligence.
-          </div>
+    <div className="w-full justify-center items-center flex flex-col py-16 px-4 md:px-16 border-b border-gray-200 min-h-200">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="w-full bg-blue-50 rounded-xl p-8">
+            <Image
+              src={"/images/image_group.png"}
+              alt={"Business Intelligence Dashboards"}
+              width={400}
+              height={300}
+              className="w-full h-auto"
+            />
         </div>
-        <div className="w-full">
-          <div className="w-full">
-            {/* Mobile: Vertical List */}
-            <div className="flex flex-col gap-8 w-full md:hidden">
-              <Image
-                src="/images/rent_roll.png"
-                alt="Reporting"
-                width={400}
-                height={600}
-                className="w-full h-auto rounded-lg shadow-xl"
-              />
-              <Image
-                src="/images/service_work_dashboard.png"
-                alt="Reporting"
-                width={1000}
-                height={800}
-                className="w-full h-auto rounded-lg shadow-xl"
-              />
-              <Image
-                src="/images/analytics_dashboard.png"
-                alt="Reporting"
-                width={400}
-                height={600}
-                className="w-full h-auto rounded-lg shadow-xl"
-              />
-            </div>
-
-            {/* Desktop: Stacked Layout */}
-            <div className="hidden md:block relative w-full h-[600px] overflow-visible">
-              <Image
-                src="/images/rent_roll.png"
-                alt="Reporting"
-                width={380}
-                height={300}
-                className={`w-full absolute top-0 -left-30 h-auto rounded-lg shadow-xl transform -rotate-6 cursor-pointer transition-all duration-500 ease-out ${
-                  activeImage === 1
-                    ? "z-30 scale-105 opacity-100 shadow-2xl"
-                    : "z-20 scale-95  hover:opacity-100"
-                }`}
-                onClick={() => handleImageInteraction(1)}
-                onMouseEnter={() => handleImageInteraction(1)}
-              />
-              <Image
-                src="/images/service_work_dashboard.png"
-                alt="Reporting"
-                width={380}
-                height={300}
-                className={`w-full absolute top-0 left-60 -translate-x-1/2 h-auto rounded-lg shadow-xl transform rotate-2 cursor-pointer transition-all duration-500 ease-out ${
-                  activeImage === 2
-                    ? "z-30 scale-100 opacity-100 shadow-2xl"
-                    : "z-21 scale-95  hover:opacity-100"
-                }`}
-                onClick={() => handleImageInteraction(2)}
-                onMouseEnter={() => handleImageInteraction(2)}
-              />
-              <Image
-                src="/images/analytics_dashboard.png"
-                alt="Reporting"
-                width={380}
-                height={300}
-                className={`w-full absolute top-10 -right-10 h-auto rounded-lg shadow-xl transform rotate-8 cursor-pointer transition-all duration-500 ease-out ${
-                  activeImage === 3
-                    ? "z-30 scale-100 opacity-100 shadow-2xl"
-                    : "z-19 scale-95 hover:opacity-100"
-                }`}
-                onClick={() => handleImageInteraction(3)}
-                onMouseEnter={() => handleImageInteraction(3)}
-              />
-            </div>
+        <div className="flex flex-col md:w-full sm:text-center md:text-left p-8">
+          <div className="text-4xl md:text-5xl font-bold mb-7">
+            {BUSINESS_INTELLIGENCE_TITLE}
           </div>
-          {/* <BusinessIntelligenceTabs /> */}
+          <ul className="text-gray-600 text-xl md:text-xl leading-relaxed space-y-3">
+            {BUSINESS_INTELLIGENCE_SUBTITLE.map((item, index) => (
+              <li key={index} className="flex items-start">
+                <span className="text-teal-500 mr-3 text-4xl leading-none">•</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>

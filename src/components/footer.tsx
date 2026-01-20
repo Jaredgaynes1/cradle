@@ -131,7 +131,7 @@ export const Footer = () => {
                     className="h-5 w-5"
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                  ></svg>
+                  />
                 </a>
               </div>
             </div>
