@@ -136,24 +136,7 @@ export default function BlogPage() {
       ),
       icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
       href: "/blog/real-time-business-intelligence",
-    },
-    {
-      title: "Case Study: 30% Revenue Increase Through Data Analytics",
-      description:
-        "How one marina operator used Cradle to identify untapped revenue streams and optimize pricing.",
-      header: (
-        <div className="flex justify-center items-center content-center">
-          <Image
-            src="images/blog7.png"
-            alt="Cradle Logo"
-            width={150}
-            height={100}
-          />
-        </div>
-      ),
-      icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
-      href: "/blog/case-study-revenue-increase",
-    },
+    }
   ];
 
   return (

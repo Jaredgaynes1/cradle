@@ -13,7 +13,6 @@ export const NAV_LINKS = [
   { href: "/about", label: "About" },
 ];
 
-export const HERO_HEADLINE = "Supercharge your Marina";
 export const HERO_SUBHEADLINE =
   "Analyze, automate, and grow without replacing what works.";
 
