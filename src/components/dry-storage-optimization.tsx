@@ -18,13 +18,13 @@ export const DryStorageOptimization = () => {
   return (
     <div className="w-full justify-center items-center flex flex-col py-16 px-4 md:px-16 border-b border-gray-200 min-h-150">
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="w-full bg-blue-50 rounded-xl p-4">
+        <div className="w-full bg-blue-50 rounded-xl p-4 cursor-pointer group">
           <Image
             src={"/images/dry_storage_optimization.png"}
             alt={DRY_STORAGE_TITLE}
             width={400}
             height={300}
-            className="w-full h-auto"
+            className="w-full h-auto transition-transform duration-300 ease-out group-hover:scale-105"
           />
         </div>
         <div className="flex flex-col gap-8 md:w-full sm:text-center md:text-left p-8">

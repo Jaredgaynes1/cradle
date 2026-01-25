@@ -24,10 +24,6 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  const Skeleton = () => (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"></div>
-  );
-
   const items = [
     {
       title: "Why Marinas Need Modern Data Infrastructure",

@@ -73,13 +73,13 @@ export const BusinessIntelligence = () => {
   return (
     <div className="w-full justify-center items-center flex flex-col py-16 px-4 md:px-16 border-b border-gray-200 min-h-150">
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="w-full bg-blue-50 rounded-xl p-8">
+        <div className="w-full bg-blue-50 rounded-xl p-8 cursor-pointer group">
             <Image
               src={"/images/image_group.png"}
               alt={"Business Intelligence Dashboards"}
               width={400}
               height={300}
-              className="w-full h-auto"
+              className="w-full h-auto transition-transform duration-300 ease-out group-hover:scale-105"
             />
         </div>
         <div className="flex flex-col md:w-full sm:text-center md:text-left p-8">

@@ -23,7 +23,7 @@ export const MarketingAndLoyalty = () => {
           </ul>
         </div>
 
-        <div className="w-full flex flex-col bg-blue-50 rounded-xl p-8">
+        <div className="w-full flex flex-col bg-blue-50 rounded-xl p-8 cursor-pointer group transition-transform duration-300 ease-out hover:scale-105">
           <div className="text-3xl tracking-wider mb-8 text-center">
             {MARKETING_LOYALTY_INTEGRATIONS_HEADER}
           </div>
