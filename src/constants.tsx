@@ -8,7 +8,7 @@ export const LOGO_SRC = "/cradle-logo.svg";
 export const LOGO_ALT = "Cradle Logo";
 
 export const NAV_LINKS = [
-  { href: "/solutions", label: "Solutions" },
+  { href: "/#business-intelligence", label: "Solutions" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
 ];
@@ -51,9 +51,10 @@ export const CUSTOMER_TESTIMONIALS = [
 // Business Intelligence Section
 export const BUSINESS_INTELLIGENCE_TITLE = "Reporting & Business Intelligence";
 export const BUSINESS_INTELLIGENCE_SUBTITLE = [
-  "Modern business intelligence in one place",
-  "Understand your property and customers without building reports in Excel",
-  "Real-time insights you couldn't get before",
+  `See the full picture of your operation without exporting a single CSVCradle connects directly to your management and reservation systems, merging your operational and financial data into one clean source of truth. `,
+  `Track what actually matters to your business, not what a template gives you. Every marina is different. We build custom dashboards to show only what you need. See occupancy trends, utilization, slip revenue or customer behavior in real-time.
+`,
+
 ];
 
 export const BUSINESS_INTELLIGENCE_IMAGES = [
@@ -90,7 +91,7 @@ export const MARKETING_LOYALTY_SUBTITLE = [
   "Automated boater communications that feel personal",
   "Keep your customers engaged without the manual work",
 ];
-export const MARKETING_LOYALTY_INTEGRATIONS_HEADER = "Integrates with";
+export const MARKETING_LOYALTY_INTEGRATIONS_HEADER = "Integrates";
 
 export const MARKETING_LOYALTY_INTEGRATIONS = [
   {

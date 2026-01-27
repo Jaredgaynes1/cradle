@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
-import { Petrona } from 'next/font/google'
+import { Public_Sans } from 'next/font/google'
 import "../output.css";
 import { PostHogProvider } from '../components/PostHogProvider'
 import { OrganizationSchema, SoftwareApplicationSchema } from '../components/structured-data'
 
 
-const petrona = Petrona({
+const publicSans = Public_Sans({
   subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-sans',
@@ -51,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${petrona.variable}`}>
+    <html lang="en" className={`${publicSans.variable}`}>
       <head>
         <OrganizationSchema />
         <SoftwareApplicationSchema />
