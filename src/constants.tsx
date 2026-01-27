@@ -121,7 +121,7 @@ export const MARKETING_LOYALTY_INTEGRATIONS = [
 ];
 
 // Dry Storage Optimization Section
-export const DRY_STORAGE_TITLE = "AI Dry Storage Optimization";
+export const DRY_STORAGE_TITLE = "AI Storage Optimization";
 export const DRY_STORAGE_SUBTITLE =
   "Cradle maximizes capacity and NOI using AI to automatically assign every boat to the optimal storage slip.";
 
