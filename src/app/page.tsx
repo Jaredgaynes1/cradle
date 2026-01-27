@@ -97,24 +97,24 @@ export default function HomePage() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6 }}
       >
-        <div className="w-full justify-center items-center flex flex-col py-24 px-4 md:px-16  bg-gradient-to-b from-white to-blue-50">
+        <div className="w-full justify-center items-center flex flex-col py-12 px-4 md:px-16  bg-gradient-to-b from-white to-blue-50">
           <div className="max-w-6xl mx-auto w-full">
-            <div className="text-4xl md:text-4xl text-center mb-16">
+            <div className="text-3xl md:text-3xl text-center mb-16">
               From our Customers
             </div>
-            <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-16 relative">
-              <div className="grid md:grid-cols-3 gap-12 items-center">
+            <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-16 relative max-w-4xl mx-auto">
+              <div className="flex flex-row gap-12 items-center">
                 <div className="flex justify-center items-center">
                   <Image
                     src="/images/bluewater_marinas.png"
                     alt="Bluewater Marinas"
-                    width={250}
-                    height={100}
+                    width={900}
+                    height={200}
                     className="object-contain"
                   />
                 </div>
-                <div className="md:col-span-2 relative">
-                  <p className="text-gray-700 text-xl md:text-2xl leading-relaxed mb-8 relative z-10">
+                <div className="relative">
+                  <p className="text-gray-700 text-xl md:text-lg leading-relaxed mb-8 relative z-10 italic">
                     "Our goal as we scale is simple. Every marina in our
                     portfolio should be data-driven with modern processes and
                     consistent standards. This becomes hard to execute when
@@ -143,7 +143,7 @@ export default function HomePage() {
       </motion.div>
 
         <div className="w-full justify-center items-center flex flex-col py-24 px-4 md:px-16  bg-blue-50">
-          <div className="text-4xl md:text-4xl  text-center mb-16">
+          <div className="text-3xl md:text-3xl  text-center mb-16">
             Technology Partners
           </div>
           <InfiniteMovingCards items={items} speed="normal" />
