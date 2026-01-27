@@ -99,7 +99,7 @@ export default function HomePage() {
       >
         <div className="w-full justify-center items-center flex flex-col py-24 px-4 md:px-16  bg-gradient-to-b from-white to-blue-50">
           <div className="max-w-6xl mx-auto w-full">
-            <div className="text-4xl md:text-4xl font-bold text-center mb-16">
+            <div className="text-4xl md:text-4xl text-center mb-16">
               From our Customers
             </div>
             <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-16 relative">
@@ -143,7 +143,7 @@ export default function HomePage() {
       </motion.div>
 
         <div className="w-full justify-center items-center flex flex-col py-24 px-4 md:px-16  bg-blue-50">
-          <div className="text-4xl md:text-4xl font-bold text-center mb-16">
+          <div className="text-4xl md:text-4xl  text-center mb-16">
             Technology Partners
           </div>
           <InfiniteMovingCards items={items} speed="normal" />
