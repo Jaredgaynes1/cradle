@@ -50,7 +50,7 @@ export const MarketingAndLoyalty = () => {
                 className="transition-transform duration-300 ease-out object-contain w-full rounded-xl shadow-lg group-hover:scale-105"
               />
             </div>
-            <div className="absolute -bottom-12 left-42 flex w-3/4 gap-2 px-3 py-2 bg-white rounded-2xl shadow-lg justify-evenly border-2 border-dotted border-gray-300 items-center">
+            <div className="absolute -bottom-12 left-42 flex w-3/4 gap-2 px-3 py-2 bg-white rounded-2xl shadow-lg justify-evenly border-2 border-dotted border-gray-300 items-center cursor-pointer transition-transform duration-300 ease-out hover:scale-105">
               {MARKETING_LOYALTY_INTEGRATIONS.map((integration, index) => (
                 <div
                   key={index}

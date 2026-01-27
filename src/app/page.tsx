@@ -91,41 +91,48 @@ export default function HomePage() {
       >
         <DryStorageOptimization />
       </motion.div>
-      <div className="w-full justify-center items-center flex flex-col py-24 px-4 md:px-16  bg-gradient-to-b from-white to-blue-50">
-        <div className="max-w-6xl mx-auto w-full">
-          <div className="text-4xl md:text-4xl font-bold text-center mb-16">
-            From our Customers
-          </div>
-          <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-16 relative">
-            <div className="grid md:grid-cols-3 gap-12 items-center">
-              <div className="flex justify-center items-center">
-                <Image
-                  src="/images/bluewater_marinas.png"
-                  alt="Bluewater Marinas"
-                  width={250}
-                  height={100}
-                  className="object-contain"
-                />
-              </div>
-              <div className="md:col-span-2 relative">
-                <p className="text-gray-700 text-xl md:text-2xl leading-relaxed mb-8 relative z-10">
-                  "Our goal as we scale is simple. Every marina in our portfolio
-                  should be data-driven with modern processes and consistent
-                  standards. This becomes hard to execute when manually
-                  exporting data and stitching together reports on a daily
-                  basis. Cradle plugged into our existing systems and turned
-                  that vision into a reality with unified reporting and
-                  automated workflows, giving us what we needed to scale our
-                  business without the worry of manual upkeep."
-                </p>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6 }}
+      >
+        <div className="w-full justify-center items-center flex flex-col py-24 px-4 md:px-16  bg-gradient-to-b from-white to-blue-50">
+          <div className="max-w-6xl mx-auto w-full">
+            <div className="text-4xl md:text-4xl font-bold text-center mb-16">
+              From our Customers
+            </div>
+            <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-16 relative">
+              <div className="grid md:grid-cols-3 gap-12 items-center">
+                <div className="flex justify-center items-center">
+                  <Image
+                    src="/images/bluewater_marinas.png"
+                    alt="Bluewater Marinas"
+                    width={250}
+                    height={100}
+                    className="object-contain"
+                  />
+                </div>
+                <div className="md:col-span-2 relative">
+                  <p className="text-gray-700 text-xl md:text-2xl leading-relaxed mb-8 relative z-10">
+                    "Our goal as we scale is simple. Every marina in our
+                    portfolio should be data-driven with modern processes and
+                    consistent standards. This becomes hard to execute when
+                    manually exporting data and stitching together reports on a
+                    daily basis. Cradle plugged into our existing systems and
+                    turned that vision into a reality with unified reporting and
+                    automated workflows, giving us what we needed to scale our
+                    business without the worry of manual upkeep."
+                  </p>
 
-                <div className="flex items-center gap-4">
-                  <div>
-                    <div className="font-semibold text-gray-900 text-xl">
-                      Josh Schooler
-                    </div>
-                    <div className="text-gray-600 text-sm">
-                      Director of Finance at Bluewater Marinas
+                  <div className="flex items-center gap-4">
+                    <div>
+                      <div className="font-semibold text-gray-900 text-xl">
+                        Josh Schooler
+                      </div>
+                      <div className="text-gray-600 text-sm">
+                        Director of Finance at Bluewater Marinas
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -133,14 +140,14 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="w-full justify-center items-center flex flex-col py-24 px-4 md:px-16  bg-blue-50">
-        <div className="text-4xl md:text-4xl font-bold text-center mb-16">
-          Technology Partners
+        <div className="w-full justify-center items-center flex flex-col py-24 px-4 md:px-16  bg-blue-50">
+          <div className="text-4xl md:text-4xl font-bold text-center mb-16">
+            Technology Partners
+          </div>
+          <InfiniteMovingCards items={items} speed="normal" />
         </div>
-        <InfiniteMovingCards items={items} speed="normal" />
-      </div>
 
       <CallToAction />
       <Footer />
