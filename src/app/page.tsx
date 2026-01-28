@@ -14,51 +14,51 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 export default function HomePage() {
   const items = [
     {
-      src: "/images/facebook_logo.png",
-      alt: "Facebook",
-      width: 100,
-      height: 50,
-    },
-    {
-      src: "/images/hubspot_logo.png",
-      alt: "HubSpot",
-      width: 180,
-      height: 80,
-    },
-    {
-      src: "/images/outlook_logo.png",
-      alt: "Outlook",
-      width: 100,
-      height: 50,
-    },
-    {
-      src: "/images/gmail_logo.png",
-      alt: "Gmail",
-      width: 140,
+      src: "/images/technology-partners/boatyard.png",
+      alt: "Boatyard",
+      width: 150,
       height: 60,
     },
     {
-      src: "/images/facebook_logo.png",
-      alt: "Facebook",
-      width: 100,
-      height: 50,
+      src: "/images/technology-partners/dockwa.png",
+      alt: "Dockwa",
+      width: 150,
+      height: 60,
     },
     {
-      src: "/images/hubspot_logo.png",
-      alt: "HubSpot",
-      width: 180,
-      height: 80,
+      src: "/images/technology-partners/mms.png",
+      alt: "MMS",
+      width: 150,
+      height: 60,
     },
     {
-      src: "/images/outlook_logo.png",
-      alt: "Outlook",
-      width: 100,
-      height: 50,
+      src: "/images/technology-partners/sharper.png",
+      alt: "Sharper",
+      width: 150,
+      height: 60,
     },
     {
-      src: "/images/gmail_logo.png",
-      alt: "Gmail",
-      width: 140,
+      src: "/images/technology-partners/slipify.png",
+      alt: "Slipify",
+      width: 150,
+      height: 60,
+    },
+    {
+      src: "/images/technology-partners/storable.png",
+      alt: "Storable",
+      width: 150,
+      height: 60,
+    },
+    {
+      src: "/images/technology-partners/boatyard.png",
+      alt: "Boatyard",
+      width: 150,
+      height: 60,
+    },
+    {
+      src: "/images/technology-partners/dockwa.png",
+      alt: "Dockwa",
+      width: 150,
       height: 60,
     },
   ];
@@ -97,7 +97,7 @@ export default function HomePage() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6 }}
       >
-        <div className="w-full justify-center items-center flex flex-col py-12 px-4 md:px-16  bg-gradient-to-b from-white to-blue-50">
+        <div className="w-full justify-center items-center flex flex-col py-12 px-4 md:px-16  bg-gradient-to-b from-white to-blue-100">
           <div className="max-w-6xl mx-auto w-full">
             <div className="text-3xl md:text-3xl text-center mb-16">
               From our Customers
@@ -142,11 +142,11 @@ export default function HomePage() {
         </div>
       </motion.div>
 
-        <div className="w-full justify-center items-center flex flex-col py-24 px-4 md:px-16  bg-blue-50">
+        <div className="w-full justify-center items-center flex flex-col py-24 px-4 md:px-16  bg-blue-100">
           <div className="text-3xl md:text-3xl  text-center mb-16">
             Technology Partners
           </div>
-          <InfiniteMovingCards items={items} speed="normal" />
+          <InfiniteMovingCards items={items} speed="normal" pauseOnHover={false} />
         </div>
 
       <CallToAction />
