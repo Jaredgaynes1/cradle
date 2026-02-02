@@ -11,30 +11,38 @@ export const MarketingAndLoyalty = () => {
   return (
     <div className="w-full justify-center items-center flex flex-col py-16 px-4 md:px-16 border-b border-gray-200 min-h-150 max-w-400 mx-auto">
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="flex flex-col gap-8 sm:text-center md:text-left p-8">
-          <div className="text-4xl md:text-4xl font-bold mb-7">
+        <div className="flex flex-col md:w-full sm:text-center md:text-left p-8">
+          <div className="text-md md:text-md font-bold mb-2 text-gray-600">
             {MARKETING_LOYALTY_TITLE}
           </div>
-          <ul className="text-gray-600 text-xl md:text-2xl leading-relaxed space-y-3">
+          <div className="mr-3 text-5xl leading-none font-semibold mb-5">
+            Turn boater data into revenue
+          </div>
+          <ul className="text-gray-600 mr-3 text-xl leading-relaxed space-y-2">
             <li className="flex items-start">
-              <div>
-                <div className="text-grey-400 mr-3 text-2xl leading-none font-semibold mb-5">
-                  Turn your boater data into revenue
-                </div>
-                <div className="mr-3 text-xl leading-none mb-5">
-                  {`Cradle syncs your reservation and service data with your CRM and marketing tools so you can run timely, personalized campaigns without manual work or exports.`}
-                </div>
-              </div>
+              <span className="mr-3 text-2xl leading-none">
+                •
+              </span>
+              <span>
+                Connect reservation and customer details to your marketing tools
+              </span>
             </li>
             <li className="flex items-start">
-              <div>
-                <div className="text-grey-400 mr-3 text-2xl leading-none font-semibold mb-5">
-                  Build loyalty that sticks — and pays
-                </div>
-                <div className="mr-3 text-xl leading-none mb-5">
-                  {`Create custom loyalty programs based on real customer behavior across your entire operation. Keep boaters engaged and coming back without adding work for your team.`}
-                </div>
-              </div>
+              <span className="mr-3 text-2xl leading-none">
+                •
+              </span>
+              <span>
+                Automate personalized messages based on reservation and service
+                activity
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span className="mr-3 text-2xl leading-none">
+                •
+              </span>
+              <span>
+                Build digital loyalty programs that keep boaters coming back
+              </span>
             </li>
           </ul>
         </div>

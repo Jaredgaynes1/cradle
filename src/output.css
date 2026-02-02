@@ -1396,6 +1396,9 @@
   .text-blue-900 {
     color: var(--color-blue-900);
   }
+  .text-gray-200 {
+    color: var(--color-gray-200);
+  }
   .text-gray-400 {
     color: var(--color-gray-400);
   }

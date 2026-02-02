@@ -34,35 +34,29 @@ export const DryStorageOptimization = () => {
             className="absolute bottom-0 right-0 w-1/2 h-auto transition-transform duration-300 ease-out group-hover:scale-105 border-4 border-white rounded-xl shadow-xl"
           />
         </div>
-        <div className="flex flex-col gap-8 md:w-full sm:text-center md:text-left p-8">
-          <div className=" text-4xl md:text-4xl font-bold mb-7">
+        <div className="flex flex-col  md:w-full sm:text-center md:text-left p-8">
+          <div className="text-md md:text-md font-bold mb-2 text-gray-500">
             {DRY_STORAGE_TITLE}
           </div>
-          <ul className="text-gray-600 text-xl md:text-2xl leading-relaxed space-y-3">
-            <li className="flex items-start">
-              <div>
-                <div className="text-grey-400 mr-3 text-2xl leading-none font-semibold mb-5">
-                  Maximize Utilization without playing Tetris
-                </div>
-                <div className="mr-3 text-xl leading-none mb-5">
-                  {`Cradle uses machine learning to determine the optimal
-                  placement for every boat based on size, availability and your
-                  marina’s unique operational constraints.`}
-                </div>
-              </div>
-            </li>
-            <li className="flex items-start">
-              <div>
-                <div className="text-grey-400 mr-3 text-2xl leading-none font-semibold mb-5">
-                  Reduce wasted capacity, improve throughput
-                </div>
-                <div className="mr-3 text-xl leading-none mb-5">
-                  {`Automatically assign boats to the right slip every time. Your
-                  team focuses on operations, not logistics.`}
-                </div>
-              </div>
-            </li>
-          </ul>
+          <div>
+            <div className="mr-3 text-5xl leading-none font-semibold mb-5">
+              Maximize utilization without playing Tetris
+            </div>
+            <ul className="mr-3 text-xl leading-relaxed space-y-2 text-gray-600">
+              <li className="flex items-start">
+                <span className="mr-3 text-2xl leading-none">•</span>
+                <span>Optimize slip placement with AI-powered technology</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-3 text-2xl leading-none">•</span>
+                <span>Reduce wasted capacity and increase NOI</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-3 text-2xl leading-none">•</span>
+                <span>Get real-time notifications when efficiency drops</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

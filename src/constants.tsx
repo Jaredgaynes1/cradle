@@ -49,7 +49,7 @@ export const CUSTOMER_TESTIMONIALS = [
 ];
 
 // Business Intelligence Section
-export const BUSINESS_INTELLIGENCE_TITLE = "Reporting & Business Intelligence";
+export const BUSINESS_INTELLIGENCE_TITLE = "REPORTING & ANALYTICS";
 export const BUSINESS_INTELLIGENCE_SUBTITLE = [
   `See the full picture of your operation without exporting a single CSVCradle connects directly to your management and reservation systems, merging your operational and financial data into one clean source of truth. `,
   `Track what actually matters to your business, not what a template gives you. Every marina is different. We build custom dashboards to show only what you need. See occupancy trends, utilization, slip revenue or customer behavior in real-time.
@@ -85,7 +85,7 @@ export const BUSINESS_INTELLIGENCE_IMAGES = [
 ];
 
 // Marketing & Loyalty Section
-export const MARKETING_LOYALTY_TITLE = "Marketing & Loyalty";
+export const MARKETING_LOYALTY_TITLE = "MARKETING & LOYALTY";
 export const MARKETING_LOYALTY_SUBTITLE = [
   "Build stronger relationships with boaters through highly personalized communications and custom loyalty programs designed for your marina",
   "Automated boater communications that feel personal",
@@ -121,7 +121,7 @@ export const MARKETING_LOYALTY_INTEGRATIONS = [
 ];
 
 // Dry Storage Optimization Section
-export const DRY_STORAGE_TITLE = "AI Storage Optimization";
+export const DRY_STORAGE_TITLE = "STORAGE OPTIMIZATION";
 export const DRY_STORAGE_SUBTITLE =
   "Cradle maximizes capacity and NOI using AI to automatically assign every boat to the optimal storage slip.";
 

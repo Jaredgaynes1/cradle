@@ -8,6 +8,7 @@ import {
   BUSINESS_INTELLIGENCE_SUBTITLE,
   BUSINESS_INTELLIGENCE_IMAGES,
 } from "@/constants";
+import { Highlight } from "./ui/hero-highlight";
 
 export function BusinessIntelligenceTabs() {
   const tabs = [
@@ -86,44 +87,40 @@ export const BusinessIntelligence = () => {
           />
         </div>
         <div className="flex flex-col md:w-full sm:text-center md:text-left p-8">
-          <div className="text-4xl md:text-4xl font-bold mb-7">
+          <div className="text-md md:text-md font-bold mb-2 text-gray-600">
             {BUSINESS_INTELLIGENCE_TITLE}
           </div>
-          <ul className="text-gray-600 text-xl md:text-2xl leading-relaxed space-y-3">
+          <div className="mr-3 text-5xl leading-none font-semibold mb-5">
+            Custom dashboards built around your marina,
+            not a template
+          </div>
+          <ul className="mr-3 text-xl leading-relaxed space-y-2 text-gray-600">
             <li className="flex items-start">
-              <div>
-                <div className="text-grey-400 mr-3 text-2xl leading-none font-semibold mb-5">
-                  See the full picture of your operation without exporting a
-                  single CSV
-                </div>
-                  <div className="mr-3 text-xl leading-none mb-5">
-                  Cradle connects directly to your management and reservation
-                  systems, merging your operational and financial data into one
-                  clean source of truth.
-                </div>
-              </div>
+              <span className="mr-3 text-2xl leading-none">•</span>
+              <span>
+                Unify data across reservation, service, sales and accounting
+              </span>
             </li>
             <li className="flex items-start">
-              <div>
-                <div className="text-grey-400 mr-3 text-2xl leading-none font-semibold mb-5">
-                  Track what actually matters to your business, not what a
-                  template gives you
-                </div>
-                <div className="mr-3 text-xl leading-none mb-5">
-                  Every marina is different. We build custom dashboards to show
-                  only what you need. See occupancy trends, utilization, slip
-                  revenue or customer behavior in real-time.
-                </div>
-              </div>
+              <span className="mr-3 text-2xl leading-none">•</span>
+              <span>
+                Track performance over time and benchmark across locations
+              </span>
             </li>
+            <li className="flex items-start">
+              <span className="mr-3 text-2xl leading-none">•</span>
+              <span>
+                Real-time data sync from your marina management system
+              </span>
+            </li>
+          </ul>
 
-            {/* {BUSINESS_INTELLIGENCE_SUBTITLE.map((item, index) => (
+          {/* {BUSINESS_INTELLIGENCE_SUBTITLE.map((item, index) => (
               <li key={index} className="flex items-start">
                 <span className="text-teal-500 mr-3 text-4xl leading-none">•</span>
                 <span>{item}</span>
               </li>
             ))} */}
-          </ul>
         </div>
       </div>
     </div>
