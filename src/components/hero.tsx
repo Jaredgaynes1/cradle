@@ -48,11 +48,11 @@ export const HeroSection = () => {
   return (
     <div className="text-center overflow-hidden">
       <div className="relative flex h-[800px] sm:h-[800px] md:h-screen w-full flex-col items-center justify-center px-4">
-        <div className="text-4xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl font-bold break-words text-black z-50 md:mb-4 sm:mb-8 md:mt-40 sm:mt-20 sm:mb-10 max-w-full">
+        <div className="text-3xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold break-words text-black z-50 md:mb-4 sm:mb-8 md:mt-40 sm:mt-20 sm:mb-10 max-w-full">
           <Highlight>Supercharge</Highlight> Your Marina
         </div>
         <div className="z-50 p-4 w-full">
-          <div className="font-semibold text-base sm:text-lg md:text-2xl lg:text-3xl mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed text-gray-700">
+          <div className="font-semibold text-base sm:text-md md:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed text-gray-700">
             {HERO_SUBHEADLINE}
           </div>
 

@@ -30,11 +30,11 @@ export default function BlogPage() {
       description:
         "How legacy industries are being transformed by real-time data analytics and why your marina can't afford to wait.",
       header: (
-        <div className="flex justify-center items-center content-center">
+        <div className="flex justify-center items-center content-center h-24">
           <Image
             src="images/blog1.png"
             alt="Cradle Logo"
-            className="rounded-xl"
+            className="rounded-xl object-contain max-h-full"
             width={150}
             height={100}
           />
@@ -48,11 +48,11 @@ export default function BlogPage() {
       description:
         "Discover how manual reporting is costing your marina thousands in lost revenue and wasted time.",
       header: (
-        <div className="flex justify-center items-center content-center">
+        <div className="flex justify-center items-center content-center h-24">
           <Image
             src="images/blog2.png"
             alt="Cradle Logo"
-            className="rounded-xl"
+            className="rounded-xl object-contain max-h-full"
             width={150}
             height={100}
           />
@@ -66,11 +66,11 @@ export default function BlogPage() {
       description:
         "Learn how machine learning can maximize your storage capacity and increase NOI by 15-30%.",
       header: (
-        <div className="flex justify-center items-center content-center">
+        <div className="flex justify-center items-center content-center h-24">
           <Image
             src="images/blog3.png"
             alt="Cradle Logo"
-            className="rounded-xl"
+            className="rounded-xl object-contain max-h-full"
             width={150}
             height={100}
           />
@@ -84,11 +84,11 @@ export default function BlogPage() {
       description:
         "Automated communication strategies that keep boaters engaged without the manual work.",
       header: (
-        <div className="flex justify-center items-center content-center">
+        <div className="flex justify-center items-center content-center h-24">
           <Image
             src="images/blog4.png"
             alt="Cradle Logo"
-            className="rounded-xl"
+            className="rounded-xl object-contain max-h-full"
             width={150}
             height={100}
           />
@@ -102,11 +102,11 @@ export default function BlogPage() {
       description:
         "A practical guide to unifying your accounting, PMS, and operations systems into one data layer.",
       header: (
-        <div className="flex justify-center items-center content-center">
+        <div className="flex justify-center items-center content-center h-24">
           <Image
             src="images/blog5.png"
             alt="Cradle Logo"
-            className="rounded-xl"
+            className="rounded-xl object-contain max-h-full"
             width={150}
             height={100}
           />
@@ -120,11 +120,11 @@ export default function BlogPage() {
       description:
         "How instant access to your data transforms decision-making and operational efficiency.",
       header: (
-        <div className="flex justify-center items-center content-center">
+        <div className="flex justify-center items-center content-center h-24">
           <Image
             src="images/blog6.png"
             alt="Cradle Logo"
-            className="rounded-xl"
+            className="rounded-xl object-contain max-h-full"
             width={150}
             height={100}
           />
@@ -151,7 +151,7 @@ export default function BlogPage() {
                   className={
                     i === 3 || i === 6
                       ? "md:col-span-2 cursor-pointer"
-                      : " cursor-pointer"
+                      : " cursor-pointer h-70"
                   }
                 />
               </Link>

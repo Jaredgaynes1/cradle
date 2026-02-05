@@ -2,48 +2,32 @@ import React from "react";
 import Image from "next/image";
 import {
   MARKETING_LOYALTY_TITLE,
-  MARKETING_LOYALTY_SUBTITLE,
-  MARKETING_LOYALTY_INTEGRATIONS_HEADER,
+  MARKETING_LOYALTY_HEADING,
+  MARKETING_LOYALTY_BULLETS,
+  MARKETING_LOYALTY_IMAGE,
   MARKETING_LOYALTY_INTEGRATIONS,
 } from "@/constants";
 
 export const MarketingAndLoyalty = () => {
   return (
-    <div className="w-full justify-center items-center flex flex-col py-16 px-4 md:px-16 border-b border-gray-200 min-h-150 max-w-400 mx-auto">
+    <div className="w-full justify-center items-center flex flex-col py-16 px-4 md:px-16 border-b border-gray-200 min-h-150 max-w-350 mx-auto">
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="flex flex-col md:w-full sm:text-center md:text-left p-8">
           <div className="text-md md:text-md font-bold mb-2 text-gray-600">
             {MARKETING_LOYALTY_TITLE}
           </div>
-          <div className="mr-3 text-5xl leading-none font-semibold mb-5">
-            Turn boater data into revenue
+          <div className="mr-3 text-4xl leading-none font-semibold mb-5">
+            {MARKETING_LOYALTY_HEADING}
           </div>
-          <ul className="text-gray-600 mr-3 text-xl leading-relaxed space-y-2">
-            <li className="flex items-start">
-              <span className="mr-3 text-2xl leading-none">
-                •
-              </span>
-              <span>
-                Connect reservation and customer details to your marketing tools
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-3 text-2xl leading-none">
-                •
-              </span>
-              <span>
-                Automate personalized messages based on reservation and service
-                activity
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-3 text-2xl leading-none">
-                •
-              </span>
-              <span>
-                Build digital loyalty programs that keep boaters coming back
-              </span>
-            </li>
+          <ul className="text-gray-600 mr-3 text-lg leading-relaxed space-y-2">
+            {MARKETING_LOYALTY_BULLETS.map((bullet, index) => (
+              <li key={index} className="flex items-start">
+                <span className="mr-3 text-2xl leading-none">
+                  •
+                </span>
+                <span>{bullet}</span>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -51,10 +35,10 @@ export const MarketingAndLoyalty = () => {
           <div className="flex flex-col items-center w-full relative">
             <div className="w-full cursor-pointer group">
               <Image
-                src={"/images/marketing_and_loyalty_base.png"}
-                alt="Marketing and Loyalty Base"
-                width={400}
-                height={150}
+                src={MARKETING_LOYALTY_IMAGE.src}
+                alt={MARKETING_LOYALTY_IMAGE.alt}
+                width={MARKETING_LOYALTY_IMAGE.width}
+                height={MARKETING_LOYALTY_IMAGE.height}
                 className="transition-transform duration-300 ease-out object-contain w-full rounded-xl shadow-lg group-hover:scale-105"
               />
             </div>

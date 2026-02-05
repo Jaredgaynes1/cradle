@@ -50,48 +50,34 @@ export const CUSTOMER_TESTIMONIALS = [
 
 // Business Intelligence Section
 export const BUSINESS_INTELLIGENCE_TITLE = "REPORTING & ANALYTICS";
-export const BUSINESS_INTELLIGENCE_SUBTITLE = [
-  `See the full picture of your operation without exporting a single CSVCradle connects directly to your management and reservation systems, merging your operational and financial data into one clean source of truth. `,
-  `Track what actually matters to your business, not what a template gives you. Every marina is different. We build custom dashboards to show only what you need. See occupancy trends, utilization, slip revenue or customer behavior in real-time.
-`,
-
+export const BUSINESS_INTELLIGENCE_HEADING =
+  "Custom dashboards built around your marina, not a template";
+export const BUSINESS_INTELLIGENCE_BULLETS = [
+  "Unify data across reservation, service, sales and accounting",
+  "Track performance over time and benchmark across locations",
+  "Real-time data sync from your marina management system",
 ];
-
-export const BUSINESS_INTELLIGENCE_IMAGES = [
-  {
-    src: "/images/rent_roll.png",
-    alt: "Rent Roll",
-    width: 380,
-    height: 300,
-    mobileWidth: 400,
-    mobileHeight: 600,
-  },
-  {
-    src: "/images/service_work_dashboard.png",
-    alt: "Service Work Dashboard",
-    width: 380,
-    height: 300,
-    mobileWidth: 1000,
-    mobileHeight: 800,
-  },
-  {
-    src: "/images/analytics_dashboard.png",
-    alt: "Analytics Dashboard",
-    width: 380,
-    height: 300,
-    mobileWidth: 400,
-    mobileHeight: 600,
-  },
-];
+export const BUSINESS_INTELLIGENCE_IMAGE = {
+  src: "/images/image_group.png",
+  alt: "Business Intelligence Dashboards",
+  width: 400,
+  height: 300,
+};
 
 // Marketing & Loyalty Section
 export const MARKETING_LOYALTY_TITLE = "MARKETING & LOYALTY";
-export const MARKETING_LOYALTY_SUBTITLE = [
-  "Build stronger relationships with boaters through highly personalized communications and custom loyalty programs designed for your marina",
-  "Automated boater communications that feel personal",
-  "Keep your customers engaged without the manual work",
+export const MARKETING_LOYALTY_HEADING = "Turn boater data into revenue";
+export const MARKETING_LOYALTY_BULLETS = [
+  "Connect reservation and customer details to your marketing tools",
+  "Automate personalized messages based on reservation and service activity",
+  "Build digital loyalty programs that keep boaters coming back",
 ];
-export const MARKETING_LOYALTY_INTEGRATIONS_HEADER = "Integrates";
+export const MARKETING_LOYALTY_IMAGE = {
+  src: "/images/marketing_and_loyalty_base.png",
+  alt: "Marketing and Loyalty Base",
+  width: 400,
+  height: 150,
+};
 
 export const MARKETING_LOYALTY_INTEGRATIONS = [
   {
@@ -122,32 +108,22 @@ export const MARKETING_LOYALTY_INTEGRATIONS = [
 
 // Dry Storage Optimization Section
 export const DRY_STORAGE_TITLE = "STORAGE OPTIMIZATION";
-export const DRY_STORAGE_SUBTITLE =
-  "Cradle maximizes capacity and NOI using AI to automatically assign every boat to the optimal storage slip.";
-
-export const DRY_STORAGE_IMAGES = [
-  {
-    src: "/images/business_intelligence_dashboard.png",
-    alt: "Business Intelligence Dashboard",
-    width: 280,
-    height: 250,
-    mobileWidth: 400,
-    mobileHeight: 600,
-  },
-  {
-    src: "/images/storage_comparisons.png",
-    alt: "Storage Comparisons",
-    width: 380,
-    height: 300,
-    mobileWidth: 1000,
-    mobileHeight: 800,
-  },
-  {
-    src: "/images/reconfiguration_steps.png",
-    alt: "Reconfiguration Steps",
-    width: 280,
-    height: 250,
-    mobileWidth: 400,
-    mobileHeight: 600,
-  },
+export const DRY_STORAGE_HEADING =
+  "Maximize utilization without playing Tetris";
+export const DRY_STORAGE_BULLETS = [
+  "Optimize slip placement with AI-powered technology",
+  "Reduce wasted capacity and increase NOI",
+  "Get real-time notifications when efficiency drops",
 ];
+export const DRY_STORAGE_MAIN_IMAGE = {
+  src: "/images/dry-storage-optimization/optimization_results.png",
+  alt: "Storage Optimization Results",
+  width: 400,
+  height: 300,
+};
+export const DRY_STORAGE_OVERLAY_IMAGE = {
+  src: "/images/dry-storage-optimization/marina_layout.png",
+  alt: "Marina Layout",
+  width: 50,
+  height: 50,
+};
