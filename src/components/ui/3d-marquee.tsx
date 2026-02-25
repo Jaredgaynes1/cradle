@@ -1,0 +1,151 @@
+"use client";
+
+import { motion } from "motion/react";
+import { cn } from "@/lib/utils";
+
+export const ThreeDMarquee = ({
+  images,
+  className,
+}: {
+  images: string[];
+  className?: string;
+}) => {
+  // Split the images array into 4 equal parts
+  const chunkSize = Math.ceil(images.length / 4);
+  const chunks = Array.from({ length: 4 }, (_, colIndex) => {
+    const start = colIndex * chunkSize;
+    return images.slice(start, start + chunkSize);
+  });
+  return (
+    <div style={{ opacity: 0.45 }} className={cn("mx-auto block h-[600px] max-sm:h-100", className)}>
+      <div className="flex size-full items-center justify-center">
+        <div className="size-[1720px] lg:scale-100">
+          <div
+            style={{
+              transform: "rotateX(40deg) rotateY(0deg) rotateZ(-45deg)",
+            }}
+            className="relative top-130 right-[50%] grid size-full origin-top-left grid-cols-4 gap-8 transform-3d"
+          >
+            {chunks.map((subarray, colIndex) => (
+              <motion.div
+                initial={{ y: 0 }}
+                animate={{ y: colIndex % 2 === 0 ? 100 : -100 }}
+                transition={{
+                  duration: colIndex % 2 === 0 ? 10 : 15,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                  ease: "easeInOut",
+                }}
+                key={colIndex + "marquee"}
+                className="flex flex-col items-start gap-8"
+              >
+                <GridLineVertical className="-left-4" offset="80px" />
+                {subarray.map((image, imageIndex) => {
+                  const isBoat = image.includes("boat");
+                  return (
+                    <div className="relative" key={imageIndex + image}>
+                      <GridLineHorizontal className="-top-4" offset="20px" />
+                      <motion.img
+                        whileHover={{
+                          y: -10,
+                        }}
+                        transition={{
+                          duration: 0.3,
+                          ease: "easeInOut",
+                        }}
+                        key={imageIndex + image}
+                        src={image}
+                        alt={`Image ${imageIndex + 1}`}
+                        className={`aspect-[600/900] ${!isBoat ? "ring ring-gray-300 ring-offset-2 ring-offset-background" : ""} object-cover hover:shadow-2xl`}
+                        width={700}
+                        height={900}
+                        style={
+                          isBoat
+                            ? {
+                              transform: "rotateZ(0deg) rotateX(10deg)",
+                                // transform: "rotateX(45deg) scaleX(0.7)",
+                              }
+                            : {}
+                        }
+                      />
+                    </div>
+                  );
+                })}
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const GridLineHorizontal = ({
+  className,
+  offset,
+}: {
+  className?: string;
+  offset?: string;
+}) => {
+  return (
+    <div
+      style={
+        {
+          "--background": "#ffffff",
+          "--color": "rgba(0, 0, 0, 0.2)",
+          "--height": "1px",
+          "--width": "5px",
+          "--fade-stop": "90%",
+          "--offset": offset || "200px", //-100px if you want to keep the line inside
+          "--color-dark": "rgba(255, 255, 255, 0.2)",
+          maskComposite: "exclude",
+        } as React.CSSProperties
+      }
+      className={cn(
+        "absolute left-[calc(var(--offset)/2*-1)] h-[var(--height)] w-[calc(100%+var(--offset))]",
+        "bg-[linear-gradient(to_right,var(--color),var(--color)_50%,transparent_0,transparent)]",
+        "[background-size:var(--width)_var(--height)]",
+        "[mask:linear-gradient(to_left,var(--background)_var(--fade-stop),transparent),_linear-gradient(to_right,var(--background)_var(--fade-stop),transparent),_linear-gradient(black,black)]",
+        "[mask-composite:exclude]",
+        "z-30",
+        "dark:bg-[linear-gradient(to_right,var(--color-dark),var(--color-dark)_50%,transparent_0,transparent)]",
+        className
+      )}
+    ></div>
+  );
+};
+
+const GridLineVertical = ({
+  className,
+  offset,
+}: {
+  className?: string;
+  offset?: string;
+}) => {
+  return (
+    <div
+      style={
+        {
+          "--background": "#ffffff",
+          "--color": "rgba(0, 0, 0, 0.2)",
+          "--height": "5px",
+          "--width": "1px",
+          "--fade-stop": "90%",
+          "--offset": offset || "150px", //-100px if you want to keep the line inside
+          "--color-dark": "rgba(255, 255, 255, 0.2)",
+          maskComposite: "exclude",
+        } as React.CSSProperties
+      }
+      className={cn(
+        "absolute top-[calc(var(--offset)/2*-1)] h-[calc(100%+var(--offset))] w-[var(--width)]",
+        "bg-[linear-gradient(to_bottom,var(--color),var(--color)_50%,transparent_0,transparent)]",
+        "[background-size:var(--width)_var(--height)]",
+        "[mask:linear-gradient(to_top,var(--background)_var(--fade-stop),transparent),_linear-gradient(to_bottom,var(--background)_var(--fade-stop),transparent),_linear-gradient(black,black)]",
+        "[mask-composite:exclude]",
+        "z-30",
+        "dark:bg-[linear-gradient(to_bottom,var(--color-dark),var(--color-dark)_50%,transparent_0,transparent)]",
+        className
+      )}
+    ></div>
+  );
+};
