@@ -115,19 +115,19 @@ export default function HomePage() {
             <div className="text-3xl md:text-3xl text-center mb-16">
               What our Clients Say
             </div>
-            <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-16 relative max-w-4xl mx-auto">
-              <div className="flex flex-row gap-12 items-center">
-                <div className="flex justify-center items-center">
+            <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-16 relative max-w-4xl mx-auto">
+              <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
+                <div className="hidden md:flex justify-center items-center w-[200px] shrink-0">
                   <Image
                     src="/images/bluewater_marinas.png"
                     alt="Bluewater Marinas"
                     width={900}
                     height={200}
-                    className="object-contain"
+                    className="object-contain w-full h-auto"
                   />
                 </div>
                 <div className="relative">
-                  <p className="text-gray-700 text-xl md:text-lg leading-relaxed mb-8 relative z-10 italic">
+                  <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-8 relative z-10 italic">
                     "Our goal as we scale is simple. Every marina in our
                     portfolio should be data-driven with modern processes and
                     consistent standards. This becomes hard to execute when
