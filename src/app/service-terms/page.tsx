@@ -5,7 +5,7 @@ export default function ServiceTermsPage() {
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Navbar />
 
-      <main className="container mx-auto px-4 py-16 max-w-4xl">
+      <main className="container mx-auto px-4 py-16 mt-32 max-w-4xl">
         <div className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold mb-8">
             <strong>Terms of Service</strong>

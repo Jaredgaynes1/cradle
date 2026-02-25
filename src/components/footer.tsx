@@ -54,10 +54,8 @@ export const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://cal.com/jared-gaynes-vjuiq7/30min"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-gray-300 text-sm"
+                    href="mailto:jared@usecradle.com"
+                    className=" hover:text-gray-300 text-sm"
                   >
                     Contact
                   </a>
@@ -70,7 +68,7 @@ export const Footer = () => {
           <div className="border-t border-gray-400 mt-8 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-sm">
-                © 2025 Cradle Labs Inc. All Rights Reserved
+                © 2026 Cradle Labs Inc. All Rights Reserved
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0">
                 <a href="#hero" className=" hover:text-gray-300">

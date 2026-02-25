@@ -84,7 +84,7 @@ export default function BlogPost() {
               Ready to modernize your marina operations?
             </p>
             <p className="text-teal-800">
-              Schedule a 30-minute call to see how Cradle can transform your data
+              Schedule a demo to see how Cradle can transform your data
               infrastructure.
             </p>
             <a

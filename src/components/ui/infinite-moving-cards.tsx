@@ -16,6 +16,7 @@ export const InfiniteMovingCards = ({
     alt: string;
     width: number;
     height: number;
+    darken?: boolean;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -90,6 +91,7 @@ export const InfiniteMovingCards = ({
         {items.map((item, idx) => (
           <li
             className="relative w-[200px] h-[100px] max-w-full shrink-0 rounded-xl  px-6 py-4 flex items-center justify-center"
+            style={item.darken ? { filter: "invert(1)" } : undefined}
             key={idx}
           >
             <Image

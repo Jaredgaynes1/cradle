@@ -34,14 +34,16 @@ export default function HomePage() {
     {
       src: "/images/technology-partners/sharper.png",
       alt: "Sharper",
-      width: 150,
-      height: 60,
+      width: 200,
+      height: 100,
+      darken: true,
     },
     {
       src: "/images/technology-partners/slipify.png",
       alt: "Slipify",
       width: 150,
       height: 60,
+      darken: true,
     },
     {
       src: "/images/technology-partners/storable.png",
@@ -50,14 +52,8 @@ export default function HomePage() {
       height: 60,
     },
     {
-      src: "/images/technology-partners/boatyard.png",
-      alt: "Boatyard",
-      width: 150,
-      height: 60,
-    },
-    {
-      src: "/images/technology-partners/dockwa.png",
-      alt: "Dockwa",
+      src: "/images/technology-partners/herons-marine.png",
+      alt: "Heron's Marine",
       width: 150,
       height: 60,
     },
@@ -67,30 +63,47 @@ export default function HomePage() {
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Navbar />
       <HeroSection />
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.6 }}
-      >
-        <BusinessIntelligence />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.6 }}
-      >
-        <MarketingAndLoyalty />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.6 }}
-      >
-        <DryStorageOptimization />
-      </motion.div>
+      <div className="bg-gray-50">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="text-center py-16 px-4 max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
+              We make smart operations smarter
+            </h2>
+            <p className="text-xl md:text-2xl font-normal text-gray-600 leading-relaxed max-w-3xl mx-auto">
+              Custom solutions that help marina owners and groups increase revenue, reduce administrative work, and create better experiences for their boaters.
+            </p>
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
+          <BusinessIntelligence />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
+          <MarketingAndLoyalty />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
+          <DryStorageOptimization />
+        </motion.div>
+      </div>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -100,7 +113,7 @@ export default function HomePage() {
         <div className="w-full justify-center items-center flex flex-col py-12 px-4 md:px-16  bg-gradient-to-b from-white to-blue-100">
           <div className="max-w-6xl mx-auto w-full">
             <div className="text-3xl md:text-3xl text-center mb-16">
-              From our Customers
+              What our Clients Say
             </div>
             <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-16 relative max-w-4xl mx-auto">
               <div className="flex flex-row gap-12 items-center">

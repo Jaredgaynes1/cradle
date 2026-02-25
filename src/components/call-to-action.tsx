@@ -12,7 +12,7 @@ export const CallToAction = () => {
         </h2>
         <p className="text-lg mb-8 max-w-3xl mx-auto">
           {
-            "Schedule a 30-minute call to see how Cradle can work for your property."
+            "Schedule a demo to see how Cradle can work for your property."
           }
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

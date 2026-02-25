@@ -1,5 +1,5 @@
 export const CALL_TO_ACTION_URL = "https://cal.com/jared-gaynes-vjuiq7/30min";
-export const CALL_TO_ACTION_TEXT = "Talk to the Founder";
+export const CALL_TO_ACTION_TEXT = "Learn More";
 export const PRODUCT_SECTION_HEADER = "Product";
 
 // Navbar
@@ -9,12 +9,12 @@ export const LOGO_ALT = "Cradle Logo";
 
 export const NAV_LINKS = [
   { href: "/#business-intelligence", label: "Solutions" },
-  { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
+  { href: "/blog", label: "Blog" },
 ];
 
 export const HERO_SUBHEADLINE =
-  "Analyze, automate, and grow without replacing what works.";
+  "Analyze, automate, and grow your marina without replacing what works.";
 
 export const CUSTOMER_TESTIMONIALS = [
   {
@@ -49,11 +49,11 @@ export const CUSTOMER_TESTIMONIALS = [
 ];
 
 // Business Intelligence Section
-export const BUSINESS_INTELLIGENCE_TITLE = "REPORTING & ANALYTICS";
+export const BUSINESS_INTELLIGENCE_TITLE = "ANALYTICS & INTEGRATION SERVICES";
 export const BUSINESS_INTELLIGENCE_HEADING =
-  "Custom dashboards built around your marina, not a template";
+  "Dashboards and integrations built around your marina, not a template";
 export const BUSINESS_INTELLIGENCE_BULLETS = [
-  "Unify data across reservation, service, sales and accounting",
+  "Unify data across reservations, service and sales",
   "Track performance over time and benchmark across locations",
   "Real-time data sync from your marina management system",
 ];
@@ -66,7 +66,7 @@ export const BUSINESS_INTELLIGENCE_IMAGE = {
 
 // Marketing & Loyalty Section
 export const MARKETING_LOYALTY_TITLE = "MARKETING & LOYALTY";
-export const MARKETING_LOYALTY_HEADING = "Turn boater data into revenue";
+export const MARKETING_LOYALTY_HEADING = "Turn customer data into revenue";
 export const MARKETING_LOYALTY_BULLETS = [
   "Connect reservation and customer details to your marketing tools",
   "Automate personalized messages based on reservation and service activity",
@@ -93,12 +93,6 @@ export const MARKETING_LOYALTY_INTEGRATIONS = [
     height: 80,
   },
   {
-    src: "/images/outlook_logo.png",
-    alt: "Outlook",
-    width: 100,
-    height: 50,
-  },
-  {
     src: "/images/gmail_logo.png",
     alt: "Gmail",
     width: 140,
@@ -106,20 +100,21 @@ export const MARKETING_LOYALTY_INTEGRATIONS = [
   },
 ];
 
-// Dry Storage Optimization Section
-export const DRY_STORAGE_TITLE = "STORAGE OPTIMIZATION";
+// AI Optimization Section
+export const DRY_STORAGE_TITLE = "AI-POWERED OPTIMIZATION";
 export const DRY_STORAGE_HEADING =
-  "Maximize utilization without playing Tetris";
+  "Make smarter storage decisions, powered by AI";
 export const DRY_STORAGE_BULLETS = [
-  "Optimize slip placement with AI-powered technology",
-  "Reduce wasted capacity and increase NOI",
-  "Get real-time notifications when efficiency drops",
+  "Maximize revenue per linear foot with intelligent placement recommendations",
+  "Solutions tailored to your marina's unique layout and constraints",
+  "Automatically factor in upcoming reservations and expected arrivals"
+
 ];
 export const DRY_STORAGE_MAIN_IMAGE = {
-  src: "/images/dry-storage-optimization/optimization_results.png",
-  alt: "Storage Optimization Results",
-  width: 400,
-  height: 300,
+  src: "/images/marina_storage.avif",
+  alt: "Marina Dry Storage",
+  width: 600,
+  height: 400,
 };
 export const DRY_STORAGE_OVERLAY_IMAGE = {
   src: "/images/dry-storage-optimization/marina_layout.png",

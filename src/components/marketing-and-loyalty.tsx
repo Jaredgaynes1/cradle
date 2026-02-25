@@ -10,16 +10,16 @@ import {
 
 export const MarketingAndLoyalty = () => {
   return (
-    <div className="w-full justify-center items-center flex flex-col py-16 px-4 md:px-16 border-b border-gray-200 min-h-150 max-w-350 mx-auto">
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="flex flex-col md:w-full sm:text-center md:text-left p-8">
-          <div className="text-md md:text-md font-bold mb-2 text-gray-600">
+    <div className="w-full justify-center items-center flex flex-col py-16 px-4 md:px-16 border-b border-gray-200 max-w-350 mx-auto">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="flex flex-col md:w-full sm:text-center md:text-left p-6">
+          <div className="text-sm font-bold mb-1 text-gray-600">
             {MARKETING_LOYALTY_TITLE}
           </div>
-          <div className="mr-3 text-4xl leading-none font-semibold mb-5">
+          <div className="mr-3 text-2xl md:text-3xl leading-snug font-semibold mb-4">
             {MARKETING_LOYALTY_HEADING}
           </div>
-          <ul className="text-gray-600 mr-3 text-lg leading-relaxed space-y-2">
+          <ul className="text-gray-600 mr-3 text-base leading-relaxed space-y-2">
             {MARKETING_LOYALTY_BULLETS.map((bullet, index) => (
               <li key={index} className="flex items-start">
                 <span className="mr-3 text-2xl leading-none">
@@ -31,7 +31,7 @@ export const MarketingAndLoyalty = () => {
           </ul>
         </div>
 
-        <div className="w-full flex flex-col bg-blue-50 rounded-3xl p-8">
+        <div className="w-full flex flex-col bg-blue-50 rounded-3xl p-6">
           <div className="flex flex-col items-center w-full relative">
             <div className="w-full cursor-pointer group">
               <Image
