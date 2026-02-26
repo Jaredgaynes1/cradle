@@ -46,12 +46,6 @@ export default function HomePage() {
       darken: true,
     },
     {
-      src: "/images/technology-partners/storable.png",
-      alt: "Storable",
-      width: 150,
-      height: 60,
-    },
-    {
       src: "/images/technology-partners/herons-marine.png",
       alt: "Heron's Marine",
       width: 150,
