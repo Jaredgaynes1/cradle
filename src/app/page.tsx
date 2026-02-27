@@ -51,6 +51,12 @@ export default function HomePage() {
       width: 150,
       height: 60,
     },
+    {
+      src: "/images/technology-partners/speedydock.webp",
+      alt: "SpeedyDock",
+      width: 150,
+      height: 60,
+    },
   ];
 
   return (
