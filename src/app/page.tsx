@@ -69,7 +69,7 @@ export default function HomePage() {
               We make smart operations smarter
             </h2>
             <p className="text-xl md:text-2xl font-normal text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              Custom solutions that help marina owners and groups increase revenue, reduce administrative work, and create better experiences for their boaters.
+              Custom solutions that help marina owners and groups connect systems together, increase revenue, reduce administrative work, and create better experiences for their boaters.
             </p>
           </div>
         </motion.div>
