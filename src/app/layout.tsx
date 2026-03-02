@@ -55,6 +55,14 @@ export default function RootLayout({
       <head>
         <OrganizationSchema />
         <SoftwareApplicationSchema />
+        <script dangerouslySetInnerHTML={{ __html: `!function(key) {
+    if (window.reb2b) return;
+    window.reb2b = {loaded: true};
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://ddwl4m2hdecbv.cloudfront.net/b/" + key + "/" + key + ".js.gz";
+    document.getElementsByTagName("script")[0].parentNode.insertBefore(s, document.getElementsByTagName("script")[0]);
+}("EN4M0HL3RKOM");` }} />
       </head>
       <body className="font-sans">
         <PostHogProvider>
