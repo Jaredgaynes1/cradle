@@ -65,14 +65,23 @@ export function Navbar() {
               ))}
             </div>
 
-            <a
-              href={CALL_TO_ACTION_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden md:inline-flex justify-self-end"
-            >
-              <TalkToTheFounderButton className="w-full" />
-            </a>
+            <div className="hidden md:flex items-center gap-4 justify-self-end">
+              <a
+                href="https://app.usecradle.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xl font-medium hover:text-teal-500 transition-colors"
+              >
+                Log In
+              </a>
+              <a
+                href={CALL_TO_ACTION_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <TalkToTheFounderButton className="w-full" />
+              </a>
+            </div>
           </motion.div>
         ) : (
           <motion.div
