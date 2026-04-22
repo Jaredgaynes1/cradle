@@ -13,14 +13,14 @@ const albertSans = Albert_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Cradle - Modern Data Infrastructure for Marinas',
+    default: 'Cradle - Unlock Hidden Revenue at Your Marina',
     template: '%s | Cradle'
   },
   description: 'Transform your marina operations with real-time business intelligence, AI-powered dry storage optimization, and automated customer communications. Save 20+ hours per week and increase revenue by 30%.',
   keywords: ['marina management software', 'marina data analytics', 'dry storage optimization', 'marina business intelligence', 'marina automation', 'boat storage optimization', 'marina reporting software'],
   authors: [{ name: 'Cradle Labs' }],
   openGraph: {
-    title: 'Cradle - Modern Data Infrastructure for Marinas',
+    title: 'Cradle - Unlock Hidden Revenue at Your Marina',
     description: 'Real-time business intelligence and AI-powered optimization for marina operators',
     url: 'https://usecradle.com',
     siteName: 'Cradle',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cradle - Modern Data Infrastructure for Marinas',
+    title: 'Cradle - Unlock Hidden Revenue at Your Marina',
     description: 'Real-time business intelligence and AI-powered optimization for marina operators',
   },
   robots: {

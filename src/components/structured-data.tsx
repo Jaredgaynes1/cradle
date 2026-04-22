@@ -5,7 +5,7 @@ export function OrganizationSchema() {
     "name": "Cradle Labs",
     "url": "https://usecradle.com",
     "logo": "https://usecradle.com/cradle-logo.svg",
-    "description": "Modern data infrastructure for marina operations",
+    "description": "Unlock hidden revenue at your marina with real-time business intelligence and automation",
     "foundingDate": "2024",
     "contactPoint": {
       "@type": "ContactPoint",
